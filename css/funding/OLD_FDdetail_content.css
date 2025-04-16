@@ -1,0 +1,353 @@
+/* header */
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #2c1810;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin: 0%;
+}
+.logo-box{
+    flex-shrink: 0;
+    width: 4%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.logo-images{
+    width: 700%;
+    margin-left:-90px;
+
+
+}
+.header_text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    height: 100%;
+    flex: 1;
+    border: none;
+}
+.header_text button {
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    color:white;
+    background-color: rgba(179, 137, 137, 0.753);
+    border-radius: 10px;
+}
+
+a{
+    color:white;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+a.p1{
+    margin-left: 10px ;
+    
+}
+a.p2{
+    margin-right: auto ;
+}
+.p3{
+    font-size: 15px;
+}
+
+/* FD_detail left form */
+#FD_mainDetail{
+    width: 1200px;
+    height: 700px;
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+    margin-top: 60px;
+}
+section .FD_left_mainDetail{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 130px;
+}
+.FD_detail_title{
+    background-color: white;
+    width: 700px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: -20px;
+   
+}
+section .FD_left_mainDetail .FD_detail_mainImage img{
+    height: 480px;
+    width: 700px;
+    background-size: auto;
+    background-position: 100%;
+    position: relative;
+}
+section .FD_left_mainDetail .FD_detail_mainImage button{
+    position: absolute;
+    height: 70px;
+    width: 40px;
+    font-size: 30px;
+    left: 650px;
+    top: 300px;
+}
+section .FD_left_mainDetail .FD_detail_images :nth-child(1){
+    margin-left: 20px;
+}
+section .FD_left_mainDetail .FD_detail_images img{
+    width: 150px;
+    height: 100px;
+    justify-content: flex-start;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+/* FD_detail right form */
+section .FD_right_mainDetail{
+    position: absolute;
+    left: 900px;
+    height: 700px;
+    width: 378px;
+}
+section .FD_right_mainDetail .FD_right_form h2{
+    font-size: 40px;
+    padding-left: 30px;
+}
+section .FD_right_mainDetail .FD_right_form h3{
+    font-size: 30px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+section .FD_right_mainDetail .FD_right_form h4{
+    font-size: 20px;
+    padding-left: 30px;
+}
+section .FD_right_mainDetail .FD_right_form .FD_right_description{
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    width: 280px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 70px;
+}
+.FD_right_hashtag button{
+    background-color: #999393;
+    color: white;
+    border-radius: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.FD_right_heart{
+    display: flex;
+    margin-left: 30px;
+}
+.FD_right_heart button{
+    font-size: 40px;
+    border-style: none;
+    background: none;
+    margin-left: 10px;
+}
+.FD_right_heart p{
+    margin-left: 10px;
+    font-size: 30px;
+}
+.FD_right_bottomForm{
+    height: 100px;
+    position: fixed;
+    z-index: 15;
+}
+.FD_right_bottomForm .donation{
+    font-size: 35px;
+    font-weight: bold;
+    width: 250px;
+    height: 70px;
+    background-color: #2c1810;
+    color: white;
+    margin-top: 20px;
+    margin-left: 45px;
+    border-radius: 5%;
+}
+.FD_right_bottomForm .share{
+    margin-left: 10px;
+    font-size: 35px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+/* FD_reportButton */
+.FD_reportButton div{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 378px;
+    height: 60px;
+    left: 922px;
+    top: 925px;
+}
+.FD_reportButton h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+}
+/* FD_detailBar */
+.FD_detailBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 730px;
+    height: 60px;
+    margin-left: 98px;
+    margin-top: 60px;
+    
+}
+.FD_detailBar div{
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* 펀딩 프로젝트 업데이트칸 */
+.FD_projectUpdate{
+    width: 730px;
+    height: 3300px;
+    margin-left: 98px;
+    background-color: gainsboro;
+}
+/* 리워드 박스 */
+.FD_rewardBar{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 378px;
+    left: 922px;
+    top: 1025px;
+}
+.rewardBar{
+    height: 1200px;
+    margin: 0 auto;
+}
+.rewardBar h2{
+    font-size:30px;
+    font-weight: bold;
+}
+.rewardBar .rewardContent {
+    background-color: rgb(199, 199, 199);
+    text-align: left;
+    align-items: center;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+/* .FD_rewardPayment{
+    background-color: aqua;
+    
+
+} */
+
+/* footer */
+footer {
+    background-color: #2c1810;
+    padding: 50px 0;
+    margin-top: 80px;
+    color: #ffffff;
+}
+
+.footer-content {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.notice-bar {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+.footer-nav {
+    margin-bottom: 20px;
+}
+
+.footer-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #999393;
+}
+
+.company-info {
+    color: #7a7a7a;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-logo {
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;     
+    padding: 0;     
+}
+
+.footer-logo-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: none; 
+    margin: -40px;
+    padding: 0;
+}
+
+
+address {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    color: #707070;
+}
