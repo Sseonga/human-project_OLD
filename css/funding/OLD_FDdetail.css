@@ -149,9 +149,11 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     height: 70px;
 }
 .FD_right_hashtag button{
-    background-color: gray;
+    background-color: #999393;
     color: white;
     border-radius: 20%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .FD_right_heart{
     display: flex;
@@ -175,7 +177,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     font-weight: bold;
     width: 250px;
     height: 70px;
-    background-color: rgb(68, 68, 68);
+    background-color: #2c1810;
     color: white;
     margin-top: 20px;
     margin-left: 30px;
@@ -245,20 +247,29 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     align-items: center;
     position: absolute;
     width: 378px;
-    height: 1000px;
     left: 922px;
     top: 1025px;
+}
+.rewardBar{
+    height: 1200px;
+    margin: 0 auto;
 }
 .rewardBar h2{
     font-size:30px;
     font-weight: bold;
 }
-.rewardBar .rewardContent{
-    background-color: rgb(85, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.rewardBar .rewardContent {
+    background-color: rgb(199, 199, 199);
     text-align: left;
+    align-items: center;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+.FD_rewardPayment{
+    background-color: aqua;
+    display: flex;
+    
 }
 
 /* footer */

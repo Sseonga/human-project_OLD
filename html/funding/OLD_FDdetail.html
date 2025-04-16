@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OLD_FDdetail</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="OLD_FDdetail.css">
+        <link rel="stylesheet" href="../../css/funding/OLD_FDdetail.css">
     </head>
     <body>
         <header>
@@ -27,7 +27,7 @@
                         <h2>프로젝트 명: 프로젝트 명입니다.</h2>
                     </div>
                     <div class="FD_detail_mainImage">
-                        <img src="FD_detail_mainImage.jpg" alt="펀딩메인이미지">
+                        <img src="../../images/funding/FD_detail_mainImage.jpg" alt="펀딩메인이미지">
                         <div>
                             <button class="FD_detail_button">
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -35,10 +35,10 @@
                         </div>
                     </div>
                     <div class="FD_detail_images">
-                        <img src="FD_detail_image1.jpg">
-                        <img src="FD_detail_image2.jpg">
-                        <img src="FD_detail_image3.jpg">
-                        <img src="FD_detail_image4.jpg">
+                        <img src="../../images/funding/FD_detail_image1.jpg">
+                        <img src="../../images/funding/FD_detail_image2.jpg">
+                        <img src="../../images/funding/FD_detail_image3.jpg">
+                        <img src="../../images/funding/FD_detail_image4.jpg">
                     </div>
                 </div>
                 <div class="FD_right_mainDetail">
@@ -55,7 +55,8 @@
                             <button>#게임</button>
                             <button>#90년대</button>
                             <button>#전자기기</button>
-                            <button>#디지털</button>
+                            <button>#디지털</button> 
+                            <!-- 칸 넘어갔을때 자동 줄바꿈? display:flex, flex-wrap:wrap 안먹힘 -->
                         </div>
                         <div class="FD_right_heart">
                             <button><i class="fa-regular fa-heart"></i></button>
@@ -90,20 +91,19 @@
             </div>
         </section>
         <section class="FD_projectIntroduce">
-            <img src="FD_detail_mainImage.jpg">
-            <img src="FD_detail_image1.jpg">
-            <img src="FD_detail_image2.jpg">
-            <img src="FD_detail_image3.jpg">
-            <img src="FD_detail_image4.jpg">
+            <img src="../../images/funding/FD_detail_mainImage.jpg">
+            <img src="../../images/funding/FD_detail_image1.jpg">
+            <img src="../../images/funding/FD_detail_image2.jpg">
+            <img src="../../images/funding/FD_detail_image3.jpg">
+            <img src="../../images/funding/FD_detail_image4.jpg">
         </section>
         <section class="FD_rewardBar">
             <div class="rewardBar">
                 <h2>리워드 선택</h2>
                 <div class="rewardContent">
-                    <div class="specialEdition">
                         <h2>1,000,000원</h2>
                         <h3>스페셜 에디션</h3>
-                        <u1>
+                        <ul>
                             <li>카트리지 8비트 가정용 패미콤</li>
                             <li>CPU 리코 2A03 1.79 MHz</li>
                             <li>사각파 채널 사운드칩 3종</li>
@@ -111,34 +111,33 @@
                             <li>전원 어댑터</li>
                             <li>패미콤 10종 게임 디스크</li>
                             <li>현대 컴보이 전자총</li>
-                        </u1>    
-                    </div>
+                        </ul>    
                 </div>
                 <div class="rewardContent">
-                    <div class="digitalEdition">
                         <h2>300,000원</h2>
                         <h3>디지털 에디션</h3>
-                        <u1>
+                        <ul>
                             <li>카트리지 8비트 가정용 패미콤</li>
                             <li>CPU 리코 2A03 1.79 MHz</li>
                             <li>탈착식 뉴 패미콤 컨트롤러</li>
                             <li>전원 어댑터</li>
                             <li>패미콤 7종 게임 디스크</li>
-                        </u1>    
-                    </div>
+                        </ul>    
                 </div>
                 <div class="rewardContent">
-                    <div class="standartEdition">
                         <h2>100,000원</h2>
                         <h3>스탠다드 에디션</h3>
-                        <u1>
+                        <ul>
                             <li>카트리지 8비트 가정용 패미콤</li>
                             <li>CPU 리코 2A03 1.79 MHz</li>
                             <li>패미콤 컨트롤러</li>
                             <li>패미콤 3종 게임 디스크</li>
-                        </u1>    
-                    </div>
+                        </ul>    
                 </div>
+            </div>
+            <div class="FD_rewardPayment">
+                <button class="donation">후원하기</button>
+                <button class="share"><i class="fa-solid fa-share-nodes"></i></button>
             </div>
         </section>
         <footer>
