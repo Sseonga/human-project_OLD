@@ -54,22 +54,23 @@ header{
     color:white;
     background-color: rgba(179, 137, 137, 0.753);
     border-radius: 10px;
+    margin-right:-20px;
 }
 
-a{
+.header_text a{
     color:white;
     font-weight:bold;
     cursor: pointer;
 }
 
-a.p1{
+.head_pund{
     margin-left: 10px ;
     
 }
-a.p2{
+.head_comu{
     margin-right: auto ;
 }
-.p3{
+.head_login{
     font-size: 15px;
 }
 
