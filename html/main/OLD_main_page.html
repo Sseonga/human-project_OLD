@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>메인페이지</title>
+        <link rel="stylesheet" href="../../css/main/OLD_main_menu.css">
+        <link rel="stylesheet" href="../../css/main/OLD_bottom_bar.css">
+        <link rel="stylesheet" href="../../css/main/OLD_main_page.css">
+    </head>
+    <body>
+        <div data-include-path="../../html/main/OLD_main_menu.html"></div>
+        <!-- 헤더 영역 -->
+    <main>
+        <div class="search_bar">
+            <input type="text" placeholder="검색어를 입력하세요">
+            <button class="search-button" type="submit">
+                <img src="../../images/main/search.png" class="search_icon">
+            </button>
+        </div>
+        <div class="banner">
+            <img src="../../images/main/banner.png" class="banner-image">
+            <button class="banner-prev"><</button>
+            <button class="banner-next">></button>
+        </div>
+    
+        <div class="main-content">
+            <div class="projects-container">
+                <div class="project-section-container">
+                    <section class="popular-projects">
+                        <div class="section-header">
+                            <h2>인기 프로젝트</h2>
+                            <button class="more-button">더보기</button>
+                        </div>
+                        <div class="project-grid">
+                            <div class = "project-card">
+                            <a href="../funding/OLD_FDdetail_content.html">
+                                    <img src="../../images/funding/FD_detail_mainImage.jpg" alt="프로젝트 이미지" class="project-image">
+                            </a>
+                        </div>
+                            <div class="project-card">
+                                <img src="../../images/main/sample2.jpg" alt="프로젝트 이미지" class="project-image">
+                            </div>
+                            <div class="project-card">
+                                <img src="../../images/main/sample3.jpg" alt="프로젝트 이미지" class="project-image">
+                            </div>
+                        </div>
+                        <button class="next-button" aria-label="다음 페이지로 이동">></button>
+                    </section>
+                </div>
+
+                <div class="project-section-container">
+                    <section class="latest-projects">
+                        <div class="section-header">
+                            <h2>최신 프로젝트</h2>
+                            <button class="more-button">더보기</button>
+                        </div>
+                        <div class="project-grid">
+                            <div class="project-card">
+                                <img src="../../images/main/sample4.jpg" alt="프로젝트 이미지" class="project-image">
+                            </div>
+                            <div class="project-card">
+                                <img src="../../images/main/sample5.jpg" alt="프로젝트 이미지" class="project-image">
+                            </div>
+                            <div class="project-card">
+                                <img src="../../images/main/sample6.jpg" alt="프로젝트 이미지" class="project-image">
+                            </div>
+                        </div>
+                        <button class="next-button" aria-label="다음 페이지로 이동">></button>
+                    </section>
+                </div>
+            </div>
+            <div class="real-time-ranking">
+                    <div class="ranking-section-container">
+                        <h2>실시간 랭킹</h2>
+                        <ul class="ranking-list">
+                            <li class="ranking-item">
+                                <span class="ranking-number">#1</span>
+                                <div class="ranking-content">
+                                    <div class="ranking-title">추억의 오락실 게임기</div>
+                                    <div class="ranking-info">펀딩 진행중</div>
+                                </div>
+                                <span class="ranking-amount">2,850,000원</span>
+                            </li>
+                            <li class="ranking-item">
+                                <span class="ranking-number">#2</span>
+                                <div class="ranking-content">
+                                    <div class="ranking-title">80년대 레트로 LP 컬렉션</div>
+                                    <div class="ranking-info">펀딩 진행중</div>
+                                </div>
+                                <span class="ranking-amount">1,950,000원</span>
+                            </li>
+                            <li class="ranking-item">
+                                <span class="ranking-number">#3</span>
+                                <div class="ranking-content">
+                                    <div class="ranking-title">단종된 추억의 과자 세트</div>
+                                    <div class="ranking-info">펀딩 진행중</div>
+                                </div>
+                                <span class="ranking-amount">1,480,000원</span>
+                            </li>
+                            <li class="ranking-item">
+                                <span class="ranking-number">#4</span>
+                                <div class="ranking-content">
+                                    <div class="ranking-title">90년대 만화잡지 컬렉션</div>
+                                    <div class="ranking-info">펀딩 진행중</div>
+                                </div>
+                                <span class="ranking-amount">980,000원</span>
+                            </li>
+                            <li class="ranking-item">
+                                <span class="ranking-number">#5</span>
+                                <div class="ranking-content">
+                                    <div class="ranking-title">레트로 게임기 에디션</div>
+                                    <div class="ranking-info">펀딩 진행중</div>
+                                </div>
+                                <span class="ranking-amount">750,000원</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <!-- 푸터 영역 -->
+        <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
+        <script src="../../js/addEventListener.js"></script>
+    </body>
+</html>

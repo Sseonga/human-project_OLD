@@ -1,0 +1,238 @@
+
+/* FD_detail left form */
+#FD_mainDetail{
+    width: 1200px;
+    height: 700px;
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+    margin-top: 60px;
+}
+section .FD_left_mainDetail{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 130px;
+}
+.FD_detail_title{
+    background-color: white;
+    width: 700px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: -20px;
+   
+}
+section .FD_left_mainDetail .FD_detail_mainImage img{
+    height: 480px;
+    width: 700px;
+    background-size: auto;
+    background-position: 100%;
+    position: relative;
+}
+section .FD_left_mainDetail .FD_detail_mainImage button{
+    position: absolute;
+    height: 70px;
+    width: 40px;
+    font-size: 30px;
+    left: 650px;
+    top: 300px;
+}
+section .FD_left_mainDetail .FD_detail_images :nth-child(1){
+    margin-left: 20px;
+}
+section .FD_left_mainDetail .FD_detail_images img{
+    width: 150px;
+    height: 100px;
+    justify-content: flex-start;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+/* FD_detail right form */
+section .FD_right_mainDetail{
+    position: absolute;
+    left: 900px;
+    height: 700px;
+    width: 378px;
+}
+section .FD_right_mainDetail .FD_right_form h2{
+    font-size: 40px;
+    padding-left: 30px;
+}
+section .FD_right_mainDetail .FD_right_form h3{
+    font-size: 30px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+section .FD_right_mainDetail .FD_right_form h4{
+    font-size: 20px;
+    padding-left: 30px;
+}
+section .FD_right_mainDetail .FD_right_form .FD_right_description{
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    width: 280px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.FD_right_mainDetail hr{
+    width: 330px;
+    margin-top: -20px;
+}
+section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 70px;
+}
+.FD_right_hashtag button{
+    background-color: #999393;
+    color: white;
+    border-radius: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.FD_right_heart{
+    display: flex;
+    margin-left: 30px;
+}
+.FD_right_heart button{
+    font-size: 40px;
+    border-style: none;
+    background: none;
+    margin-left: 10px;
+}
+.FD_right_heart p{
+    margin-left: 10px;
+    font-size: 30px;
+}
+.FD_right_bottomForm{
+    height: 100px;
+    z-index: 15;
+}
+.FD_right_bottomForm .donation{
+    font-size: 35px;
+    font-weight: bold;
+    width: 250px;
+    height: 70px;
+    background-color: #2c1810;
+    color: white;
+    margin-left: 45px;
+    border-radius: 5%;
+}
+.FD_right_bottomForm .share{
+    margin-left: 10px;
+    font-size: 35px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+/* FD_reportButton */
+.FD_reportButton div{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 378px;
+    height: 60px;
+    left: 922px;
+    top: 925px;
+}
+.FD_reportButton h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+}
+/* FD_detailBar */
+.FD_detailBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 730px;
+    height: 60px;
+    margin-left: 98px;
+    margin-top: 60px;
+    
+}
+.FD_detailBar div{
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    font-size: 15px;
+}
+.FD_detailBar a{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* 펀딩 프로젝트 환불/문의칸 */
+.FD_projectRefund{
+    width: 730px;
+    height: 1250ㄴpx;
+    margin-left: 98px;
+    background-color: gainsboro;
+    position: relative;
+    z-index: -2;
+    
+}
+.FD_projectRefund .updateBox h2{
+    padding-top: 30px;
+}
+.updateBox hr{
+    width: 650px;
+}
+.updateBox{
+    line-height: 160%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/* 리워드 박스 */
+.FD_rewardBar{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 378px;
+    left: 922px;
+    top: 1025px;
+}
+.rewardBar{
+    height: 1200px;
+    margin: 0 auto;
+}
+.rewardBar h2{
+    font-size:30px;
+    font-weight: bold;
+}
+.rewardBar .rewardContent {
+    background-color: rgb(199, 199, 199);
+    text-align: left;
+    align-items: center;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+.FD_reward_button .donation{
+    font-size: 35px;
+    font-weight: bold;
+    width: 250px;
+    height: 70px;
+    background-color: #2c1810;
+    color: white;
+    border-radius: 5%;
+    position: absolute;
+    right: 100px;
+    top: 1100px;
+}
+.FD_reward_button .share{
+    margin-left: 10px;
+    font-size: 35px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 1105px;
+    right: 20px;
+}

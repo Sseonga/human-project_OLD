@@ -32,7 +32,9 @@ header{
     margin-left: 50px;
 }
 .logo-images{
-    width: 700%;
+    /* width: 700%; */
+    /* 250417 이성하 a태그 추가시 로고 위치 문제로 크기 절대값으로 수정 */
+    width: 280px;
     margin-left:-90px;
 
 }
