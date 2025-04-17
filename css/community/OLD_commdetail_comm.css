@@ -179,7 +179,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
 /* 커뮤니티 프로젝트 소개칸 */
 .comm_projectCommunity{
     width: 1205px;
-    height: 4600px;
+    height: 1750px;
     margin-left: 98px;
     background-color: gainsboro;
     position: relative;
@@ -195,6 +195,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
     border-radius: 60px;
     position: relative;
     top: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .comm_sendBar input{
     width: 700px;
@@ -232,4 +233,15 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
     position: absolute;
     top: 154px;
     left: 340px;
+}
+.comm_boxList{
+    background-color: violet;
+    margin-top: 150px;
+    height: 1500px;
+}
+.comm_box1{
+    background-color: aqua;
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 50px;
 }
