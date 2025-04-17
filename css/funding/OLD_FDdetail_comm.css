@@ -198,25 +198,25 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
 }
 .FD_comm #id{
     position: absolute;
-    top: -10px;
-    left: 120px;
+    top: -18px;
+    left: 100px;
     color: white;
 }
 .FD_comm h4{
     position: absolute;
-    left: 120px;
-    top: 45px;
+    left: 100px;
+    top: 35px;
     color: white;
 }
 .FD_comm i:nth-child(1){
-    font-size: 70px;
+    font-size: 50px;
     margin-left: 30px;
     margin-top: 30px;
     margin-bottom: 10px;
     color: white;
 }
 .FD_comm_interBox{
-    background-color: #999393;
+    background-color: #ebebeb;
     border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%;
     height: 180px;
@@ -227,9 +227,6 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     top: 10px;
     color: white;
 }
-.FD_comm_interbox .vertical_line{
-
-}
 .FD_comm_interBox h3 {
     font-size: 16px;
     font-weight: normal;
@@ -237,22 +234,61 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     line-height: 150%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: -5px;
+    margin-top: -10px;
   }
   .FD_comm_interBox h2{
     line-height: 150%;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 10px;
+    font-size: 22px;
   }
-  .FD_comm_interBox hr{
-    border: 3px solid rgb(12, 5, 5);
-    width: 80px;
-    
+  .FD_comm_interBox_left{
+    width: 300px;
+    height: 60px;
+    position: relative;
+    top: 10px;
+    border: 1px solid gainsboro;
+    background-color: #2c1810;
+    border-bottom-left-radius: 20%;
   }
-  .FD_comm_interBox i{
-    font-size: 30px;
+  .FD_comm_interBox .FD_comm_interBox_left i{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 90px;
+    top: -15px;
+  }
+  .FD_comm_interBox .FD_comm_interBox_left h1{
     color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 160px;
+    top: -4px;
+  }
+  .FD_comm_interBox_right{
+    width: 300px;
+    height: 60px;
+    position: relative;
+    left: 300px;
+    top: -53px;
+    border: 1px solid gainsboro;
+    background-color: #2c1810;
+    border-bottom-right-radius: 20%;
+  }
+  .FD_comm_interBox .FD_comm_interBox_right i{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 90px;
+    top: -15px;
+  }
+  .FD_comm_interBox .FD_comm_interBox_right h1{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 160px;
+    top: -4px;
   }
 /* 리워드 박스 */
 .FD_rewardBar{
