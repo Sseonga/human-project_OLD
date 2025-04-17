@@ -166,6 +166,9 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     color: #000000;
     text-decoration: none;
 }
+.FD_detailBar .detailBar_introduce:hover, .detailBar_community:hover, .detailBar_refund:hover, .detailBar_update:hover{
+    background-color: rgb(104, 104, 104);
+}
 
 /* 펀딩 프로젝트 커뮤니티칸 */
 .FD_projectCommunity{
@@ -193,7 +196,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     width: 600px;
     height: 300px;
     margin: 0 auto;
-    border-radius: 10%;
+    border-radius: 30px;
     position: relative;
 }
 .FD_comm #id{
@@ -247,10 +250,10 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     width: 300px;
     height: 60px;
     position: relative;
-    top: 10px;
+    top: 11px;
     border: 1px solid gainsboro;
     background-color: #2c1810;
-    border-bottom-left-radius: 20%;
+    border-bottom-left-radius: 30px;
   }
   .FD_comm_interBox .FD_comm_interBox_left i{
     font-size: 35px;
@@ -274,7 +277,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     top: -53px;
     border: 1px solid gainsboro;
     background-color: #2c1810;
-    border-bottom-right-radius: 20%;
+    border-bottom-right-radius: 30px;
   }
   .FD_comm_interBox .FD_comm_interBox_right i{
     font-size: 35px;
@@ -290,6 +293,111 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     left: 160px;
     top: -4px;
   }
+  /* 펀딩 댓글창 */
+  #FD_commentBox{
+    background-color: #999393;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 10%;
+    /* max-height: 0;  */
+    /* overflow: hidden; */
+    /* transition: max-height 0.5s ease; */
+  }
+.comment1{
+    background-color: rgb(226, 226, 226);
+    width:500px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+  }
+.comment1 i{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+.comment1 h2{
+    position: absolute;
+    top: -30px;
+    font-size: 20px;
+    left: 75px;
+}
+.comment1 h3{
+    position: absolute;
+    top: 3px;
+    font-size: 15px;
+    left: 450px;
+    color: #2c1810;
+}
+.comment1 p{
+    margin-top: 15px;
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    font-size: 13px;
+}
+.comment2{
+    background-color: rgb(226, 226, 226);
+    width:500px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    border-radius: 30px;
+  }
+.comment2 i{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+.comment2 h2{
+    position: absolute;
+    top: -30px;
+    font-size: 20px;
+    left: 75px;
+}
+.comment2 h3{
+    position: absolute;
+    top: 3px;
+    font-size: 15px;
+    left: 450px;
+    color: #2c1810;
+}
+.comment2 p{
+    margin-top: 15px;
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    font-size: 13px;
+}
+.FD_hiddenComm.show{
+    max-height: 500px;
+  }
+  .commentForm{
+    background-color: #2c1810;
+    width: 500px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 160px;
+    border-radius: 20px;
+  }
+  .commentForm input{
+    width: 430px;
+    border-radius: 20px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 12px;
+  }
+.commentForm i{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 728px;
+    right: 70px;
+}
+
 /* 리워드 박스 */
 .FD_rewardBar{
     border: 1px solid black;

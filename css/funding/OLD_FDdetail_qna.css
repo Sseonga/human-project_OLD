@@ -170,7 +170,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
 /* 펀딩 프로젝트 환불/문의칸 */
 .FD_projectRefund{
     width: 730px;
-    height: 1250ㄴpx;
+    height: 1250px;
     margin-left: 98px;
     background-color: gainsboro;
     position: relative;
