@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>관리자 페이지</title>
+        <link rel="stylesheet" href="../../css/admin/OLD_admin_fund01.css">
+        
+    </head>
+    <body>
+        <div class="selectab">
+            <aside class="sidebar">
+                <h3>커뮤니티</h3>
+                <ul>
+                    <li><a href="./OLD_admin_comm01.html" title="게시글 관리">게시글 관리</a></li>
+                    <li><a href="./OLD_admin_comm02.html" title="삭제 게시글">삭제 게시글</a></li>
+                </ul>
+                <h3>펀딩</h3>
+                <ul>
+                    <li><a href="./OLD_admin_fund01.html" title="게시글 관리">-게시글 관리</a></li>
+                    <li><a href="./OLD_admin_fund02.html" title="제안 심사">제안 심사</a></li>
+                    <li><a href="./OLD_admin_fund03.html" title="결제 관리">결제 관리</a></li>
+                </ul>
+                <h3>회원관리</h3>
+                <ul>
+                    <li><a href="./OLD_admin_custom.html" title="게시글 관리">사용자 관리</a></li>
+                </ul>
+                <h3>공지사항</h3>
+                <ul>
+                    <li><a href="./OLD_admin_notice01.html" title="공지사항 작성">공지사항 작성</a></li>
+                    <li><a href="./OLD_admin_notice02.html" title="공지사항 관리">공지사항 관리</a></li>
+                </ul>
+                <h3>고객지원</h3>
+                <ul>
+                    <li><a href="./OLD_admin_support.html" title="답변대기 문의">답변대기 문의</a></li>
+                </ul>
+            </aside>
+            <div class="content">
+                <div class="main">
+                    <div class="pagename">
+                        <h1>관리자 페이지</h1>
+                        <button class="exit-btn">나가기</button>
+                    </div>
+                </div>
+                <div class="tab_name">펀딩 ➤ 게시글 관리</div>
+                <div class="option-area">
+                    <div class="option">
+                        <p>전체선택</p><input type="checkbox" onclick="selectAll(this)" name="board">
+                        <select><option>전체선택</option></select>
+                        <select><option>카테고리</option></select>
+                        <select><option>게시자</option></select>
+                        <button class="selec">선택</button>
+                    </div>
+                    
+                </div>
+                <div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>게시물 번호</th>
+                            <th>카테고리</th>
+                            <th>게시자</th>
+                            <th>이메일</th>
+                            <th>참여도</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagenavi">
+                        <a href="#">< Previous</a>
+                        <a href="#" class="nowpg">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a> ... </a>
+                        <a href="#">10</a>
+                        <a href="#">11</a>
+                        <a href="#">Next ></a>
+                    </div>
+                </div>
+            </div>   
+        <script src="./OLD_admin_fund01.js"></script>
+        
+
+    </body>
+</html>

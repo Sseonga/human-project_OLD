@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>관리자 페이지</title>
+        <link rel="stylesheet" href="../../css/admin/OLD_admin_support.css">
+        <!-- <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                }
+            body{
+                background-color:#f5f5f5
+            }   
+            div.pagename{
+                text-align:center;
+            }
+            .main{
+                
+                height: calc(30vh - 100px);
+            }
+            .selectab{
+                display: flex;
+                height: calc(100vh - 100px);
+            }
+            .option {
+                display: flex;              
+                justify-content: center;    /* 가로 가운데 정렬 */
+                gap: 10px;
+                width: 100%;                  
+                }
+            .option-area{
+                background-color:rgba(216, 213, 213, 0.753);
+                display: flex;
+                height:60px;
+                width: 70%;
+                margin: 0 auto; /* 길이가 정해져있을때 가운데 정렬*/
+                padding-bottom:0;
+                box-shadow: 0px 0px 1px 0px;
+            }
+            .tab_name{
+                text-align:center;
+                font-size:22px;
+                font-weight:bold;
+                margin-bottom:20px;
+                padding-top:-2px
+            }
+            .sidebar {
+                width: 150px;
+                background-color: white;
+                color: #2c1810;
+                padding: 20px 10px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                
+                }
+            
+            .content {
+                display: flex;
+                flex-direction: column; /* 세로로 나열되도록 설정 */
+                width: 100%; /* 나머지 공간 차지 */
+                }
+
+            
+            table {
+                    width: 70%;
+                    border-collapse: collapse;
+                    text-align: center;
+                    margin: 0px auto;
+                    
+                }
+            th, td {
+                border: 1px solid #ccc;
+                padding: 8px;
+            }
+            td{
+                height:8px;
+            }
+            .option select {
+                width: 80px;
+                height:60%; 
+                margin: auto 0;
+            }
+            button.selec{
+                width: 60px;
+                height:60%; 
+                margin: auto 0;
+                color:black;
+
+            }
+
+            
+            .pagename{
+                padding-top:50px;
+                display: flex;
+                justify-content: center;
+            }
+            button.exit-btn {
+                padding: 1px 10px;
+                background-color: #7a7b81;
+                color: white;
+                border: none;
+                border-radius: 20px;  
+                font-size: 12px;
+                cursor: pointer;
+                margin-left: 8px;  
+                
+            }
+
+            button.exit-btn:hover {
+                background-color: #c0392b;
+            }
+            .sidebar ul{
+                padding-top:3px;
+                padding-bottom:60px;
+            }
+            .sidebar li{
+                font-size:15px;
+                padding-top:4px;
+            }
+            .sidebar li a:hover{
+                color:red;
+                cursor: pointer;
+
+            }
+            .pagenavi{
+                padding-top:25px;
+                text-align: center;
+            }
+
+            .pagenavi a{
+                text-decoration:none;
+                border: 1px solid #ccc;
+                margin: 0 4px;
+                padding: 4px 8px;
+                margin-right: 4px;
+                font-size:14px;
+                color: black;
+                border-radius:5px;
+            }
+
+            a.nowpg {
+                background-color: black;
+                color:white;
+                }
+            
+            li a{
+                text-decoration:none;
+                color: #2c1810;
+            }
+            header{
+                width: 100%;
+                height: 100px;
+                background-color: #2c1810;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 50px;
+                box-sizing: border-box;
+                margin: 0%;
+            }
+            .logo-box{
+                flex-shrink: 0;
+                width: 4%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 50px;
+            }
+            .logo-images{
+                width: 700%;
+                margin-left:-90px;
+            }
+            .header_text {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font-size: 24px;
+                height: 100%;
+                flex: 1;
+                border: none;
+            }
+            .header_text button {
+                padding: 10px 20px;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+                font-size: 15px;
+                color:white;
+                background-color: rgba(179, 137, 137, 0.753);
+                border-radius: 10px;
+            }
+
+            .header_text a{
+                color:white;
+                font-weight:bold;
+                cursor: pointer;
+            }
+
+            a.p1{
+                margin-left: 10px ;
+                
+            }
+            a.p2{
+                margin-right: auto ;
+            }
+            .p3{
+                font-size: 15px;
+            }
+            .option p{
+                margin: auto 0;
+            }
+            
+        </style> -->
+    </head>
+    <body>
+        <!-- <header>
+            <div class = "logo-box">
+                <img src="./image-removebg-preview.png" alt="로고" class="logo-images">
+            </div>
+                <div class = "header_text">
+                <a class="p1">펀딩</a>
+                <a class="p2">커뮤니티</a>
+                <a class="p3">로그인</a>
+                <button>프로젝트 만들기</button>
+            </div>
+        </header> -->
+        <div class="selectab">
+            <aside class="sidebar">
+                <h3>커뮤니티</h3>
+                <ul>
+                    <li><a href="./OLD_admin_comm01.html" title="게시글 관리">게시글 관리</a></li>
+                    <li><a href="./OLD_admin_comm02.html" title="삭제 게시글">삭제 게시글</a></li>
+                </ul>
+                <h3>펀딩</h3>
+                <ul>
+                    <li><a href="./OLD_admin_fund01.html" title="게시글 관리">게시글 관리</a></li>
+                    <li><a href="./OLD_admin_fund02.html" title="제안 심사">제안 심사</a></li>
+                    <li><a href="./OLD_admin_fund03.html" title="결제 관리">결제 관리</a></li>
+                </ul>
+                <h3>회원관리</h3>
+                <ul>
+                     <li><a href="./OLD_admin_custom.html" title="게시글 관리">사용자 관리</a></li>
+                </ul>
+                <h3>공지사항</h3>
+                <ul>
+                    <li><a href="./OLD_admin_notice01.html" title="공지사항 작성">공지사항 작성</a></li>
+                    <li><a href="./OLD_admin_notice02.html" title="공지사항 관리">공지사항 관리</a></li>
+                </ul>
+                <h3>고객지원</h3>
+                <ul>
+                    <li><a href="./OLD_admin_support.html" title="답변대기 문의">-답변대기 문의</a></li>
+                </ul>
+            </aside>
+            <div class="content">
+                <div class="main">
+                    <div class="pagename">
+                        <h1>관리자 페이지</h1>
+                        <button class="exit-btn">나가기</button>
+                    </div>
+                </div>
+                <div class="tab_name">고객지원 ➤ 답변대기 문의</div>
+                <div class="option-area">                
+                    <div class="option">
+                        <p>전체선택</p><input type="checkbox" onclick="selectAll(this)" name="board">
+                        <select><option>전체선택</option></select>
+                        <select><option>카테고리</option></select>
+                        <select><option>게시자</option></select>
+                        <button class="selec">선택</button>
+                    </div>
+                    
+                </div>
+                <div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>게시물 번호</th>
+                            <th>카테고리</th>
+                            <th>문의날짜</th>
+                            <th>이메일</th>
+                            <th>게시자</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="board"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagenavi">
+                        <a href="#">< Previous</a>
+                        <a href="#" class="nowpg">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a> ... </a>
+                        <a href="#">10</a>
+                        <a href="#">11</a>
+                        <a href="#">Next ></a>
+                    </div>
+                </div>
+            </div>   
+        <script src="./OLD_admin_support.js"></script>
+        
+
+    </body>
+</html>
