@@ -90,9 +90,8 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
 .FD_right_hashtag button{
     background-color: #999393;
     color: white;
-    border-radius: 20%;
-    display: flex;
-    flex-wrap: wrap;
+    border-radius: 20px;
+    height: 30px;
 }
 .FD_right_heart{
     display: flex;
