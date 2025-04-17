@@ -133,8 +133,9 @@ html, body {
         letter-spacing: 0.5px;
     }
     .project-card {
+        width: 198px; 
+        height: 200px; 
         overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     .project-grid {
         display: grid;
@@ -142,6 +143,7 @@ html, body {
         gap: 33px;
         margin-bottom: 20px;
     }
+
     .project-image {
         width: 100%;
         height: 100%;
