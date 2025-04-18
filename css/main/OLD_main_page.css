@@ -222,3 +222,83 @@ html, body {
         font-size: 15px;
         font-weight: 700;
     }
+
+/* 검색 옵션 컨테이너 스타일 */
+.search-options-container {
+    position: absolute;
+    top: 220px;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 600px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recent-searches {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-searches span {
+    padding: 6px 0;
+    font-size: 15px;
+    color: #222;
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+}
+
+.recent-searches span:hover {
+    text-decoration: underline;
+}
+
+.tags, .years, .genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span, .years span, .genres span {
+    padding: 5px 12px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.popular-searches {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popular-searches li {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}

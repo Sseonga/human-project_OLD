@@ -4,42 +4,31 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>메인페이지(검색)</title>
-        <link rel="stylesheet" href="../../css/main/OLD_main_menu.css">
+        <title>메인페이지</title>
+        <link rel="stylesheet" href="../../css/main/OLD_main_menu_1.css">
         <link rel="stylesheet" href="../../css/main/OLD_bottom_bar.css">
-        <link rel="stylesheet" href="../../css/main/OLD_search_modal.css">
+        <link rel="stylesheet" href="../../css/main/OLD_main_page.css">
+        <script src="../../js/main/OLD_main_page1.js"></script>
     </head>
     <body>
-        <div data-include-path="../../html/main/OLD_main_menu.html"></div>
-        <!-- 헤더 영역 -->
+        <header></header>
+        <div class="blank"></div>
         <main>
             <div class="search_bar">
                 <input type="text" placeholder="검색어를 입력하세요">
                 <button class="search-button" type="submit">
-                        <img src="../../images/main/search.png" class="search_icon">
+                    <img src="../../images/main/search.png" class="search_icon">
                 </button>
-            </div>
-            <div class="banner">
-                <img src="../../images/main/banner.png" class="banner-image">
-                <button class="banner-prev"><</button>
-                <button class="banner-next">></button>
             </div>
             <div class="search-options-container">
                 <div class="section">
                     <div class="section-header">
-                      <h3>최근 검색어</h3>
-                      <a href="../../html/main/OLD_main_page.html">
-                      <button class="clear-button">✕</button>
-                    </a>
+                        <h3>최근 검색어</h3>
+                        <button class="clear-button">✕</button>
                     </div>
                     <div class="recent-searches">
-                      <span>추억의 쫀득이</span>
-                      <span>추억의 쫀드기</span>
-                      <span>링키바</span>
-                      <span>보물섬_잡지</span>
-                      <span>뚝딱이인형</span>
                     </div>
-                </div>     
+                </div>
 
                 <div class="section">
                     <h3>태그</h3>
@@ -71,7 +60,6 @@
                     </div>
                 </div>
 
-                <!-- 인기 검색어 -->
                 <div class="section">
                     <h3>인기 검색어</h3>
                     <ul class="popular-searches">
@@ -83,6 +71,12 @@
                     </ul>
                 </div>
             </div>
+            <div class="banner">
+                <img src="../../images/main/banner.png" class="banner-image">
+                <button class="banner-prev"><</button>
+                <button class="banner-next">></button>
+            </div>
+        
             <div class="main-content">
                 <div class="projects-container">
                     <div class="project-section-container">
@@ -92,7 +86,7 @@
                                 <button class="more-button">더보기</button>
                             </div>
                             <div class="project-grid">
-                                <div class="project-card">
+                                <div class = "project-card">
                                 <a href="../funding/OLD_FDdetail_content.html">
                                         <img src="../../images/funding/FD_detail_mainImage.jpg" alt="프로젝트 이미지" class="project-image">
                                 </a>
@@ -192,6 +186,8 @@
 
         <!-- 푸터 영역 -->
         <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
+        <script src="../../js/main/OLD_main_menu_1.js"></script>
         <script src="../../js/addEventListener.js"></script>
+        <script src="../../js/main/OLD_main_search.js"></script>
     </body>
 </html>

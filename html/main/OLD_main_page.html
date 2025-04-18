@@ -14,12 +14,61 @@
         <!-- 헤더 영역 -->
     <main>
         <div class="search_bar">
-            <a href="../../html/main/OLD_search_modal.html">
             <input type="text" placeholder="검색어를 입력하세요">
-        </a>
             <button class="search-button" type="submit">
                 <img src="../../images/main/search.png" class="search_icon">
             </button>
+        </div>
+        <div class="search-options-container">
+            <div class="section">
+                <div class="section-header">
+                    <h3>최근 검색어</h3>
+                    <button class="clear-button">✕</button>
+                </div>
+                <div class="recent-searches">
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>태그</h3>
+                <div class="tags">
+                    <span>#링키바</span>
+                    <span>#큐플레이</span>
+                    <span>#미니벨</span>
+                    <span>#보물섬</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>연도별</h3>
+                <div class="years">
+                    <span>#70년대</span>
+                    <span>#80년대</span>
+                    <span>#90년대</span>
+                    <span>#00년대</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>장르별</h3>
+                <div class="genres">
+                    <span>#게임</span>
+                    <span>#식품</span>
+                    <span>#음악</span>
+                    <span>#기타</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>인기 검색어</h3>
+                <ul class="popular-searches">
+                    <li>1. 추억의 쫀득이</li>
+                    <li>2. 추억의 쫀드기</li>
+                    <li>3. 링키바</li>
+                    <li>4. 보물섬_잡지</li>
+                    <li>5. 뚝딱이인형</li>
+                </ul>
+            </div>
         </div>
         <div class="banner">
             <img src="../../images/main/banner.png" class="banner-image">
@@ -138,5 +187,6 @@
         <!-- 푸터 영역 -->
         <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
         <script src="../../js/addEventListener.js"></script>
+        <script src="../../js/main/OLD_main_search.js"></script>
     </body>
 </html>
