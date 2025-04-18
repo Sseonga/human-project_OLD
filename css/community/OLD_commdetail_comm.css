@@ -1,0 +1,247 @@
+/* comm_detail left form */
+#comm_mainDetail{
+    width: 1200px;
+    height: 700px;
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+    margin-top: 60px;
+}
+section .comm_left_mainDetail{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 130px;
+}
+.comm_detail_title{
+    background-color: white;
+    width: 700px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: -20px;
+   
+}
+section .comm_left_mainDetail .comm_detail_mainImage img{
+    height: 480px;
+    width: 700px;
+    background-size: auto;
+    background-position: 100%;
+    position: relative;
+}
+section .comm_left_mainDetail .comm_detail_mainImage button{
+    position: absolute;
+    height: 70px;
+    width: 40px;
+    font-size: 30px;
+    left: 650px;
+    top: 300px;
+}
+section .comm_left_mainDetail .comm_detail_images :nth-child(1){
+    margin-left: 20px;
+}
+section .comm_left_mainDetail .comm_detail_images img{
+    width: 150px;
+    height: 100px;
+    justify-content: flex-start;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+/* comm_detail right form */
+section .comm_right_mainDetail{
+    position: absolute;
+    left: 900px;
+    height: 700px;
+    width: 378px;
+}
+section .comm_right_mainDetail .comm_right_form h2{
+    font-size: 30px;
+    padding-left: 30px;
+}
+section .comm_right_mainDetail .comm_right_form .voteNum{
+    font-size: 60px;
+    line-height: 120%;
+    color: #34915b;
+    
+}
+section .comm_right_mainDetail .comm_right_form h3{
+    font-size: 30px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+section .comm_right_mainDetail .comm_right_form h4{
+    font-size: 20px;
+    padding-left: 30px;
+}
+section .comm_right_mainDetail .comm_right_form .comm_right_description{
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    width: 280px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.comm_right_mainDetail hr{
+    width: 330px;
+    margin-top: -20px;
+}
+section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    gap: 8px;
+    height: 70px;
+    max-width: 300px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.comm_right_hashtag button{
+    background-color: #999393;
+    color: white;
+    border-radius: 20px;
+}
+.comm_right_heart{
+    display: flex;
+    margin-left: 30px;
+}
+.comm_right_heart button{
+    font-size: 40px;
+    border-style: none;
+    background: none;
+    margin-left: 10px;
+}
+.comm_right_heart p{
+    margin-left: 10px;
+    font-size: 30px;
+}
+.comm_right_bottomForm{
+    height: 100px;
+    z-index: 15;
+}
+.comm_right_bottomForm .donation{
+    font-size: 35px;
+    font-weight: bold;
+    width: 250px;
+    height: 70px;
+    background-color: #2c1810;
+    color: white;
+    margin-left: 45px;
+    border-radius: 5%;
+}
+.comm_right_bottomForm .share{
+    margin-left: 10px;
+    font-size: 35px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+/* comm_reportButton */
+.comm_reportButton div{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 378px;
+    height: 60px;
+    left: 922px;
+    top: 920px;
+}
+.comm_reportButton h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+}
+/* comm_detailBar */
+.comm_detailBar{
+    display: flex;
+    width: 730px;
+    height: 60px;
+    margin-top: 60px;
+    padding-left: 100px;
+    align-items: center;
+    
+}
+.comm_detailBar div{
+    border: 1px solid black;
+    width: 362px;
+    text-align: center;
+    font-size: 15px;
+}
+.comm_detailBar a{
+    color: #000000;
+    text-decoration: none;
+}
+.comm_detailBar .detailBar_introduce:hover, .detailBar_community:hover, .detailBar_refund:hover, .detailBar_update:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+/* 커뮤니티 프로젝트 소개칸 */
+.comm_projectCommunity{
+    width: 1205px;
+    height: 1750px;
+    margin-left: 98px;
+    background-color: gainsboro;
+    position: relative;
+    z-index: -2;
+    margin-top: 60px;
+}
+
+.comm_sendBar{
+    background-color: #2c1810;
+    width: 900px;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 60px;
+    position: relative;
+    top: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.comm_sendBar input{
+    width: 700px;
+    height: 50px;
+    border: 1px solid #2c1810;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 40px;
+}
+.comm_sendBar i{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 25px;
+    right: 35px;
+}
+.profile{
+    font-size: 60px;
+    position: absolute;
+    color: white;
+    left: 180px;
+    top: 85px;
+    z-index: 1;
+}
+.emoticon{
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 154px;
+    left: 270px;
+}
+.vote{
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 154px;
+    left: 340px;
+}
+.comm_boxList{
+    background-color: violet;
+    margin-top: 150px;
+    height: 1500px;
+}
+.comm_box1{
+    background-color: aqua;
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
