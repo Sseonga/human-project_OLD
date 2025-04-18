@@ -77,7 +77,18 @@
         <section class="comm_reportButton">
             <div>
                 <p>프로젝트에 문제가 있나요?</p>
-                <h4>신고하기 > </h4>
+                <button id="reportBtn">신고하기 > </button>
+            </div>
+            <div id="reportModal">
+                <div class="reportBody">
+                    <h1>프로젝트 공유하기</h1>
+                    <div class="report_url">
+                        <p>https://ourlostday.com</p>
+                        <button id="urlbtn">URL 복사</button>
+                    </div>
+                    <hr class="divider">
+                    <span id="closeBtn">확인</span>
+                </div>
             </div>
         </section>
         <section class="comm_projectCommunity">
@@ -96,5 +107,6 @@
         <!-- 푸터 영역 -->
         <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
         <script src="../../js/addEventListener.js"></script>
+        <script src="../../js/community/reportModal.js"></script> 
     </body>
 </html>

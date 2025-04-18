@@ -147,10 +147,12 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
     left: 922px;
     top: 920px;
 }
-.comm_reportButton h4{
+.comm_reportButton button{
     font-size: 20px;
     font-weight: bold;
     margin-left: auto;
+    border: none;
+    background-color: rgba(0, 0, 0, 0)
 }
 /* comm_detailBar */
 .comm_detailBar{

@@ -230,6 +230,9 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     color: #000000;
     text-decoration: none;
 }
+.FD_detailBar .detailBar_introduce:hover, .detailBar_community:hover, .detailBar_refund:hover, .detailBar_update:hover{
+    background-color: rgb(104, 104, 104);
+}
 
 /* 펀딩 프로젝트 소개칸 */
 .FD_projectIntroduce{
@@ -255,14 +258,19 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     border: 1px solid black;
 }
 /* 리워드 박스 */
+.FD_reward_scrollSpace{
+    height: 3000px;
+}
 .FD_rewardBar{
     border: 1px solid black;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     position: absolute;
     width: 378px;
     left: 922px;
     top: 1025px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .rewardBar{
     height: 1200px;
@@ -271,6 +279,10 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
 .rewardBar h2{
     font-size:30px;
     font-weight: bold;
+    margin-left: 20px;
+}
+.rewardBar h3{
+    margin-left: 20px;
 }
 .rewardBar .rewardContent {
     background-color: rgb(199, 199, 199);
@@ -279,6 +291,11 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     height: 300px;
     border: 1px solid black;
     margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.rewardContent:hover{
+    background-color: gainsboro;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .FD_reward_button .donation{
     font-size: 35px;
@@ -287,10 +304,11 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     height: 70px;
     background-color: #2c1810;
     color: white;
-    border-radius: 5%;
+    border-radius: 10px;
     position: absolute;
     right: 100px;
     top: 1100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .FD_reward_button .share{
     margin-left: 10px;
@@ -301,4 +319,5 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     position: absolute;
     top: 1105px;
     right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
