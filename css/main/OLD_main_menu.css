@@ -75,4 +75,13 @@ header{
 .head_login{
     font-size: 15px;
 }
+.alarm img{
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+.mypage img {
+    width: 40px;
+    height: 40px;
+}
 

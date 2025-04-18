@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OLD_FDdetail_comm</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="../../css/community/OLD_commdetail_comm.css">
+        <link rel="stylesheet" href="../../css/main/OLD_main_menu.css">
+        <link rel="stylesheet" href="../../css/main/OLD_bottom_bar.css">
+    </head>
+    <body>
+        <div data-include-path="../../html/main/OLD_main_menu.html"></div>
+        <!-- 헤더 영역 -->
+        <section id="comm_mainDetail" class="comm_mainDetail">
+            <div>
+                <div class="comm_left_mainDetail">
+                    <div class="comm_detail_title">
+                        <h2>돌아온 에그몽: 11기 피규어 포함</h2>
+                    </div>
+                    <div class="comm_detail_mainImage">
+                        <img src="../../images/community/comm_detail_mainImage.jpg" alt="펀딩메인이미지">
+                        <div>
+                            <button class="comm_detail_button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>    
+                        </div>
+                    </div>
+                    <div class="comm_detail_images">
+                        <img src="../../images/community/comm_detail_image1.jpg">
+                        <img src="../../images/community/comm_detail_image2.jpg">
+                        <img src="../../images/community/comm_detail_image3.jpg">
+                        <img src="../../images/community/comm_detail_image4.jpg">
+                    </div>
+                </div>
+                <div class="comm_right_mainDetail">
+                    <div class="comm_right_form">
+                        <!-- 목표금액, 모인금액, 참여인원 실시간 숫자 변동 기능 어떻게 넣지 -->
+                        <h2>현재 <br><span class="voteNum">3,200명</span>이 <br>투표했습니다.</h2> 
+                        <!--달성률은?-->
+                        <hr/>
+                        <h4>기간</h4>
+                        <h4>참여인원</h4>
+                        <div class="comm_right_description">
+                            <p>세부설명칸입니다.</p>
+                        </div>
+                        <div class="comm_right_hashtag">
+                            <button>#식품</button>
+                            <button>#90년대</button>
+                            <button>#초콜릿</button>
+                            <button>#불량식품</button>
+                            <button>#피규어</button>
+                            <button>#추억의_간식</button> 
+                            <!-- 칸 넘어갔을때 자동 줄바꿈? display:flex, flex-wrap:wrap 안먹힘 -->
+                        </div>
+                        <div class="comm_right_heart">
+                            <button><i class="fa-regular fa-heart"></i></button>
+                            <p>2,300</p>
+                        </div>
+                    </div>
+                    <div class="comm_right_bottomForm">
+                        <button class="donation">투표하기</button>
+                        <button class="share"><i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comm_detailBar">
+            <div class="detailBar_introduce">
+                <a href="OLD_commdetail_content.html" target="_parent"><h2>프로젝트 소개</h2></a>
+            </div>
+            <div class="detailBar_community">
+                <a href="OLD_commdetail_comm.html" target="_parent"><h2>커뮤니티</h2></a>
+            </div>
+        </section>
+        <section class="comm_reportButton">
+            <div>
+                <p>프로젝트에 문제가 있나요?</p>
+                <h4>신고하기 > </h4>
+            </div>
+        </section>
+        <section class="comm_projectCommunity">
+            <div comm_topSendBar>
+                <div class="profile">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <form class="comm_sendBar">
+                    <input type="text" >
+                    <i class="fa-solid fa-paper-plane"></i>
+                </form>
+                <div class="emoticon">
+                    <i class="fa-solid fa-face-smile"></i>
+                </div>
+                <div class="vote">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                </div>    
+            </div>
+            <div class="comm_boxList">
+                <div class="comm_box1">
+                    <div class="profile_box">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h2 id="id">human1234</h2>   
+                    </div>
+                    <div class="btn_box">
+                        <button id="heartBtn" class="FD_comm_interBox_left">
+                            <i class="fa-regular fa-heart"></i>
+                            <h1>330</h1>   
+                        </button>
+                        <button id="commBtn" class="FD_comm_interBox_right">
+                            <i class="fa-regular fa-comment"></i>
+                            <h1>4</h1>    
+                        </button>
+                    </div>
+                    
+                </div>    
+            </div>
+            
+        </section>
+        <!-- 푸터 영역 -->
+        <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
+        <script src="../../js/addEventListener.js"></script>
+    </body>
+</html>

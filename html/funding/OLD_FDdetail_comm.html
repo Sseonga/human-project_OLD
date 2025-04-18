@@ -96,14 +96,34 @@
                         <p>25/04/01</p>
                         <h2>이번에 물량 새로 풀렸다는데</h2>
                         <h3>이번에 풀리는 제품 추가 구매하시는 분 있나요? 충남 지역이시면 댓글 한번만 남겨주세요 배송지 관련해서 물어보고 싶습니다.</h3>
-                        <div class="FD_comm_interBox_left">
+                        <button id="heartBtn" class="FD_comm_interBox_left">
                             <i class="fa-regular fa-heart"></i>
                             <h1>23</h1>   
-                        </div>
-                        <div class="FD_comm_interBox_right">
+                        </button>
+                        <button id="commBtn" class="FD_comm_interBox_right">
                             <i class="fa-regular fa-comment"></i>
                             <h1>2</h1>    
+                        </button>
+                    </div>
+                    <div id="FD_commentBox" class="FD_hiddenComm">
+                        <div class="comment1">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <h2>human4567</h2>
+                            <h3>13h</h3>
+                            <p>충남 서산 지역에 살고 있습니다! 배송 관련해서 어떤게 궁금하신가요?</p> 
+                               <!-- 답글의 답글 구현 가능...? -->
                         </div>
+                        <div class="comment2">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <h2>nothuman12</h2>
+                            <h3>6h</h3>
+                            <p>공지 보고 이번에 배송 신청하려고 하는데 충남 천안 지역 배송 받으신 분들 후기 있으시면 저도 듣고 싶습니다.</p> 
+                        </div>
+                        <form class="commentForm">
+                            <input type="text" maxlength="400" placeholder=" 최대 400글자까지 작성 가능합니다.">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </form>
+                        
                     </div>
                 </div>
             </div>      
@@ -151,6 +171,7 @@
                 <button class="share"><i class="fa-solid fa-share-nodes"></i></button>
             </div>
         </section>
+        <script src="../../js/funding/OLD_FDdetail_comm.js"></script>
         <!-- 푸터 영역 -->
         <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
         <script src="../../js/addEventListener.js"></script>
