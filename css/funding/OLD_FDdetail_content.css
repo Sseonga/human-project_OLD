@@ -383,7 +383,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     background-color: gainsboro;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.FD_reward_button .donation{
+.FD_reward_button #donationBtn{
     font-size: 35px;
     font-weight: bold;
     width: 250px;
@@ -396,7 +396,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     top: 1100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.FD_reward_button .share{
+.FD_reward_button #shareBtn{
     margin-left: 10px;
     font-size: 35px;
     text-align: center;
