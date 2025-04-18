@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+body{
+    background-color:#f5f5f5;
+
+}
+
+
+
+div .pagename{
+    text-align:center;
+    padding-top:70px;
+    
+}
+
+.mypagetab{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap:1px;
+    padding-bottom: 50px;
+    
+
+}
+
+.tab button{
+    display: inline-block;
+    background-color: white;
+    width:220px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    font-size:20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.now button {
+    background-color: #d1cfcf;     
+    color: #2c2c2c;                
+    width:220px;
+    height:50px;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2); 
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    font-size:20px;
+}
+
+.array_pj{
+    display:flex;
+
+    width:1100px;
+    background-color: white;
+    height:500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+
+span a{
+    text-decoration: none;
+    color:black;
+}
+
+.pj_images{
+
+    
+}
