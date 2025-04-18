@@ -1,78 +1,63 @@
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.querySelector('.search_bar input');
-    const searchOptionsContainer = document.querySelector('.search-options-container');
     const searchButton = document.querySelector('.search-button');
+    const searchOptionsContainer = document.querySelector('.search-options-container');
+    const recentSearches = document.querySelector('.recent-searches');
+    const clearButton = document.querySelector('.clear-button');
+    const tags = document.querySelectorAll('.tags span, .years span, .genres span');
 
     // 초기에 검색 옵션 숨기기
     if (searchOptionsContainer) {
         searchOptionsContainer.style.display = 'none';
     }
 
-    // 검색창 클릭 이벤트
-    searchInput.addEventListener('click', function(e) {
-        e.preventDefault();
-        if (searchOptionsContainer) {
-            searchOptionsContainer.style.display = 'block';
-        }
+    // 검색창 클릭 시 검색 옵션 표시
+    searchInput.addEventListener('click', function() {
+        searchOptionsContainer.style.display = 'block';
     });
 
-    // 검색어 입력 이벤트
-    searchInput.addEventListener('input', function(e) {
-        const searchTerm = e.target.value.toLowerCase();
-        console.log('검색어:', searchTerm);
-    });
-
-    // 검색 버튼 클릭 이벤트
+    // 검색 버튼 클릭 시 최근 검색어 추가
     searchButton.addEventListener('click', function() {
         const searchTerm = searchInput.value.trim();
         if (searchTerm) {
-            addToRecentSearches(searchTerm);
+            // 새로운 검색어 요소 생성
+            const searchElement = document.createElement('span');
+            searchElement.textContent = searchTerm;
+            
+            // 최근 검색어 목록의 맨 앞에 추가
+            if (recentSearches.firstChild) {
+                recentSearches.insertBefore(searchElement, recentSearches.firstChild);
+            } else {
+                recentSearches.appendChild(searchElement);
+            }
+
+            // 최근 검색어가 3개를 초과하면 가장 오래된 검색어 삭제
+            while (recentSearches.children.length > 3) {
+                recentSearches.removeChild(recentSearches.lastChild);
+            }
+
+            // 검색창 비우기
+            searchInput.value = '';
         }
     });
 
-    // 검색어 지우기 버튼
-    const clearButton = document.querySelector('.clear-button');
-    if (clearButton) {
-        clearButton.addEventListener('click', function() {
-            const recentSearches = document.querySelector('.recent-searches');
-            if (recentSearches) {
-                recentSearches.innerHTML = '';
-                searchOptionsContainer.style.display = 'none';
-            }
-        });
-    }
-
-
-    // 최근 검색어 추가 함수
-    function addToRecentSearches(searchTerm) {
-        const recentSearches = document.querySelector('.recent-searches');
-        if (recentSearches) {
-            // 중복 검색어 확인
-            const existingSearches = recentSearches.querySelectorAll('span');
-            for (let search of existingSearches) {
-                if (search.textContent === searchTerm) {
-                    return; // 이미 존재하는 검색어면 추가하지 않음
-                }
-            }
-
-            // 새로운 검색어 요소 생성
-            const span = document.createElement('span');
-            span.textContent = searchTerm;
-            span.addEventListener('click', function() {
-                searchInput.value = searchTerm;
-                searchOptionsContainer.style.display = 'none';
-            });
-
-            // 기존 검색어 배열로 변환
-            const searches = Array.from(existingSearches);
-            
-            // 최대 3개까지만 유지
-            if (searches.length >= 3) {
-                recentSearches.removeChild(searches[searches.length - 1]); // 가장 오래된 검색어 제거
-            }
-
-            // 새로운 검색어를 맨 위에 추가
-            recentSearches.insertBefore(span, recentSearches.firstChild);
+    // 최근 검색어 클릭 시 검색창에 입력
+    recentSearches.addEventListener('click', function(e) {
+        if (e.target.tagName === 'SPAN') {
+            searchInput.value = e.target.textContent;
         }
-    }
+    });
+
+    // 태그 클릭 시 검색창에 입력
+    tags.forEach(tag => {
+        tag.addEventListener('click', function() {
+            searchInput.value = this.textContent;
+        });
+    });
+
+    // 클리어 버튼 클릭 시 최근 검색어 모두 삭제
+    clearButton.addEventListener('click', function() {
+        recentSearches.innerHTML = '';
+        searchOptionsContainer.style.display = 'none';
+    });
 }); 
