@@ -24,6 +24,10 @@ div.pagename{
     gap: 10px;
     width: 100%;                  
     }
+.option p{
+    margin: auto 0;
+    
+    }
 .option-area{
     background-color:rgba(216, 213, 213, 0.753);
     display: flex;
