@@ -1,13 +1,15 @@
 body {
     margin: auto;
 }
+
 .blank {
     background: url() center center;
     background-size: cover;
     background-attachment: fixed;
     height: 100px;
 }
-header{
+
+header {
     width: 100%;
     height: 100px;
     background-color: #2c1810;
@@ -22,7 +24,8 @@ header{
     position: fixed;
     z-index: 1000;
 }
-.logo-box{
+
+.logo-box {
     flex-shrink: 0;
     width: 4%;
     height: 100px;
@@ -31,13 +34,12 @@ header{
     justify-content: center;
     margin-left: 50px;
 }
-.logo-images{
-    /* width: 700%; */
-    /* 250417 이성하 a태그 추가시 로고 위치 문제로 크기 절대값으로 수정 */
-    width: 280px;
-    margin-left:-90px;
 
+.logo-images {
+    width: 280px;
+    margin-left: -90px;
 }
+
 .header_text {
     display: flex;
     align-items: center;
@@ -47,49 +49,61 @@ header{
     flex: 1;
     border: none;
 }
+
 .header_text button {
     padding: 10px 20px;
     border: none;
     font-weight: bold;
     cursor: pointer;
     font-size: 15px;
-    color:white;
+    color: white;
     background-color: rgba(179, 137, 137, 0.753);
     border-radius: 10px;
-    margin-right:-20px;
+    margin-right: -20px;
 }
 
-.header_text a{
-    color:white;
-    font-weight:bold;
+.header_text a {
+    color: white;
+    font-weight: bold;
     cursor: pointer;
 }
 
-.head_pund{
-    margin-left: 10px ;
-    
+.head_pund {
+    margin-left: 10px;
 }
-.head_comu{
-    margin-right: auto ;
+
+.head_comu {
+    margin-right: auto;
 }
-.head_login{
+
+.head_login {
     font-size: 15px;
 }
-.alarm img{
+
+.menu_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 알림 스타일 */
+.alarm {
+    position: relative;
+}
+
+.alarm img {
     width: 40px;
     height: 40px;
     filter: brightness(0) invert(1);
 }
+
 .mypage img {
     width: 40px;
     height: 40px;
 }
 
-.alarm {
-    position: relative;
-}
-
-.alarm-dropdown {
+/* 알림 드롭다운 스타일 */
+.alarm_dropdown {
     position: absolute;
     width: 300px;
     height: 300px;
@@ -99,27 +113,41 @@ header{
     left: 80%;
     transform: translateX(-50%);
     margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
 }
 
-.alarm-header {
+.alarm:hover .alarm_dropdown {
+    display: block;
+}
+
+.alarm_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
 }
 
-.alarm-header h3 {
+.alarm_header span {
     margin: 0;
     font-size: 18px;
+    font-weight: bold;
 }
 
-.settings-icon {
+.alarm_setting {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.alarm_setting img {
     width: 20px;
     height: 20px;
-    cursor: pointer;
 }
 
-.alarm-dropdown hr {
+hr {
     margin: 0;
     border: none;
     border-top: 1px solid #ddd;
@@ -156,80 +184,91 @@ header{
     font-size: 14px;
 }
 
-.mypage_container {
+/* 마이페이지 스타일 */
+.mypage-container {
     position: relative;
-    margin-left: 20px;
-    cursor: pointer;
 }
 
-.mypage_icon {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.mypage_dropdown {
-    display: none;
+.mypage-dropdown {
     position: absolute;
+    display: none;
+    background-color: #ffffff !important;
+    width: 250px;
     top: 45px;
-    right: 0;
-    width: 280px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.mypage_container:hover .mypage_dropdown {
-    display: block;
-}
-
-.mypage_profile {
+    right: -80px;
+    z-index: 9999;
+    border: 2px solid #333;
     padding: 20px;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    align-items: center;
 }
 
-.profile_img {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    margin-right: 15px;
+.mypage-dropdown * {
+    color: #000000 !important;
 }
 
-.profile_info {
-    display: flex;
-    flex-direction: column;
+.profile-section {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 15px;
+    background-color: #ffffff;
 }
 
-.user_name {
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-    margin-bottom: 4px;
+.profile-section .profile-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
 }
 
-.user_id {
+.profile-section .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.profile-section .user-id {
     font-size: 14px;
-    color: #666;
+    font-weight: normal;
+    margin: 0;
 }
 
-.mypage_menu {
-    padding: 10px 0;
+.menu-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.menu_item {
+.menu-list .menu-item {
     display: block;
-    padding: 12px 20px;
-    color: #333;
+    padding: 10px;
     text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.2s;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333333 !important;
 }
 
-.menu_item:hover {
-    background-color: #f5f5f5;
+.mypage-dropdown a.menu-item {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+.menu-item {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mypage-button {
+    cursor: pointer;
+    position: relative;
+}
+
+.mypage-menu {
+    padding: 8px 0;
+} 
