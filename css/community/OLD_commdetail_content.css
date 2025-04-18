@@ -164,7 +164,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7);
-    /* display: none; */
+    display: none;
 }
  #reportModal .reportBody{
     width: 400px;
