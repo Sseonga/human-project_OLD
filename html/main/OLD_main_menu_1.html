@@ -4,28 +4,40 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OLD_main_menu</title>
-        <link rel="stylesheet" href="../../css/main/OLD_main_menu.css">
+        <title>OLD_main_menu1</title>
+        <link rel="stylesheet" href="../../css/main/OLD_main_menu1.css">
     </head>
     <body>
         <header>
-            <div class = "logo-box">
+            <div class="logo-box">
                 <!-- 250417 이성하 로고 클릭시 메인페이지 링크 추가 -->
                 <a href="/html/main/OLD_main_page.html">
                     <img src="/images/main/image-removebg-preview.png" alt="로고" class="logo-images">
                 </a>
             </div>
-            <div class = "header_text">
+            <div class="header_text">
                 <a class="head_pund">펀딩</a>
                 <a class="head_comu">커뮤니티</a>
                 <a class="alarm"><img src="../../images/main/alarm-removebg-preview.png" alt="알림창"></a>
+                <div class="alarm-dropdown" style="display: none;">
+                    <div class="alarm-header">
+                        <h3>알림</h3>
+                        <img src="../../images/main/setting.png" alt="설정" class="settings-icon">
+                    </div>
+                    <hr>
+                    <div class="alarm-content">
+                        <div class="no-alarm-message">
+                            <img src="../../images/main/alarm-removebg-preview.png" alt="알림" class="bell-icon">
+                            <p class="main-text">받은 알림이 없습니다.</p>
+                            <p class="sub-text">알림 설정에서 받고 싶은 알림을 선택할 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
                 <a class="mypage"><img src="../../images/main/mypage.png" alt="마이페이지"></a>
                 <button>프로젝트 만들기</button>
             </div>
         </header>
         <div class="blank"></div>
-
-
-        <script></script>
+        <script src="../../js/main/OLD_main_menu1.js"></script>
     </body>
 </html>
