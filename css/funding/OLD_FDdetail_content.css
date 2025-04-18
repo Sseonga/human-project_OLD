@@ -231,12 +231,19 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     text-decoration: none;
 }
 
-/* 펀딩 프로젝트 업데이트칸 */
+/* 펀딩 프로젝트 소개칸 */
 .FD_projectIntroduce{
     width: 730px;
-    height: 3300px;
+    height: 3400px;
     margin-left: 98px;
     background-color: gainsboro;
+}
+.FD_projectIntroduce .communityBox h2{
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.FD_projectIntroduce .communityBox hr{
+    width: 650px;
 }
 .FD_projectIntroduce img{
     width:  600px;

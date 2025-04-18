@@ -308,7 +308,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     height: 100px;
     margin: 0 auto;
     position: relative;
-    top: 30px;
+    top: 100px;
     border-radius: 30px;
     margin-bottom: 30px;
   }
@@ -343,7 +343,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     height: 120px;
     margin: 0 auto;
     position: relative;
-    top: 30px;
+    top: 100px;
     border-radius: 30px;
   }
 .comment2 i{
@@ -379,7 +379,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     width: 500px;
     height: 60px;
     margin: 0 auto;
-    margin-top: 160px;
+    margin-top: -230px;
     border-radius: 20px;
   }
   .commentForm input{
@@ -393,7 +393,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     color: white;
     font-size: 25px;
     position: absolute;
-    top: 728px;
+    top: 338px;
     right: 70px;
 }
 
