@@ -37,6 +37,7 @@ header{
     width: 150px;
     height: 100px;
     /* margin-left:-90px; */
+    /* 250418 이성하 링크클릭범위 문제로 이미지크기,마진 수정 */
 
 }
 .header_text {

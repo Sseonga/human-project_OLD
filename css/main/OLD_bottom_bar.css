@@ -64,6 +64,7 @@ footer {
     justify-content: flex-start;
     margin: -10px -10px;     
     padding: 0;     
+    /* 250418 이성하 링크클릭범위 문제로 이미지크기,마진 수정 */
 }
 
 .footer-logo-image {
