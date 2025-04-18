@@ -58,8 +58,19 @@
                         </div>
                     </div>
                     <div class="FD_right_bottomForm">
-                        <button class="donation">후원하기</button>
-                        <button class="share"><i class="fa-solid fa-share-nodes"></i></button>
+                        <button id="donationBtn">후원하기</button>
+                        <button id="shareBtn"><i class="fa-solid fa-share-nodes"></i></button>
+                        <div id="shareModal">
+                            <div class="shareBody">
+                                <h1>프로젝트 공유하기</h1>
+                                <div class="share_url">
+                                    <p>https://ourlostday.com</p>
+                                    <button id="urlbtn">URL 복사</button>
+                                </div>
+                                <hr class="divider" style="width: 400px;">
+                                <span id="closeBtn">확인</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,5 +158,6 @@
         <!-- 푸터 영역 -->
         <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
         <script src="../../js/addEventListener.js"></script>
+        <script src="../../js/funding/shareModal.js"></script>
     </body>
 </html>
