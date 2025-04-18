@@ -30,7 +30,7 @@ footer {
 
 
 .footer-nav {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .footer-nav a {
@@ -57,12 +57,12 @@ footer {
 }
 
 .footer-logo {
-    width: 200px;
+    width: 100px;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 0;     
+    margin: -10px -10px;     
     padding: 0;     
 }
 
@@ -71,7 +71,7 @@ footer {
     height: auto;
     object-fit: contain;
     transform: none; 
-    margin: -40px;
+    margin: 0px;
     padding: 0;
 }
 

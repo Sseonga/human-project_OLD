@@ -16,7 +16,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 auto;
     box-sizing: border-box;
     margin: 0%;
     position: fixed;
@@ -24,18 +24,19 @@ header{
 }
 .logo-box{
     flex-shrink: 0;
-    width: 4%;
+    width: 150px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 .logo-images{
     /* width: 700%; */
     /* 250417 이성하 a태그 추가시 로고 위치 문제로 크기 절대값으로 수정 */
-    width: 280px;
-    margin-left:-90px;
+    width: 150px;
+    height: 100px;
+    /* margin-left:-90px; */
 
 }
 .header_text {
@@ -56,13 +57,14 @@ header{
     color:white;
     background-color: rgba(179, 137, 137, 0.753);
     border-radius: 10px;
-    margin-right:-20px;
+    margin-right: 20px;
 }
 
 .header_text a{
     color:white;
     font-weight:bold;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .head_pund{
