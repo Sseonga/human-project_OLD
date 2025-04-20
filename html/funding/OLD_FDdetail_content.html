@@ -58,8 +58,19 @@
                         </div>
                     </div>
                     <div class="FD_right_bottomForm">
-                        <button class="donation">후원하기</button>
-                        <button class="share"><i class="fa-solid fa-share-nodes"></i></button>
+                        <button id="donationBtn">후원하기</button>
+                        <button id="shareBtn"><i class="fa-solid fa-share-nodes"></i></button>
+                        <div id="shareModal">
+                            <div class="shareBody">
+                                <h1>프로젝트 공유하기</h1>
+                                <div class="share_url">
+                                    <p>https://ourlostday.com</p>
+                                    <button id="urlbtn">URL 복사</button>
+                                </div>
+                                <hr class="divider" style="width: 400px;">
+                                <span id="closeBtn">확인</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,51 +109,55 @@
             </div>
             
         </section>
-        <section class="FD_rewardBar">
-            <div class="rewardBar">
-                <h2>리워드 선택</h2>
-                <div class="rewardContent">
-                        <h2>1,000,000원</h2>
-                        <h3>스페셜 에디션</h3>
-                        <ul>
-                            <li>카트리지 8비트 가정용 패미콤</li>
-                            <li>CPU 리코 2A03 1.79 MHz</li>
-                            <li>사각파 채널 사운드칩 3종</li>
-                            <li>탈착식 뉴 패미콤 컨트롤러(커스텀 가능)</li>
-                            <li>전원 어댑터</li>
-                            <li>패미콤 10종 게임 디스크</li>
-                            <li>현대 컴보이 전자총</li>
-                        </ul>    
+        <section class="FD_reward_scrollSpace">
+            <section class="FD_rewardBar">
+                <div class="rewardBar">
+                    <h2>리워드 선택</h2>
+                    <div class="rewardContent">
+                            <h2>1,000,000원</h2>
+                            <h3>스페셜 에디션</h3>
+                            <ul>
+                                <li>카트리지 8비트 가정용 패미콤</li>
+                                <li>CPU 리코 2A03 1.79 MHz</li>
+                                <li>사각파 채널 사운드칩 3종</li>
+                                <li>탈착식 뉴 패미콤 컨트롤러(커스텀 가능)</li>
+                                <li>전원 어댑터</li>
+                                <li>패미콤 10종 게임 디스크</li>
+                                <li>현대 컴보이 전자총</li>
+                            </ul>    
+                    </div>
+                    <div class="rewardContent">
+                            <h2>300,000원</h2>
+                            <h3>디지털 에디션</h3>
+                            <ul>
+                                <li>카트리지 8비트 가정용 패미콤</li>
+                                <li>CPU 리코 2A03 1.79 MHz</li>
+                                <li>탈착식 뉴 패미콤 컨트롤러</li>
+                                <li>전원 어댑터</li>
+                                <li>패미콤 7종 게임 디스크</li>
+                            </ul>    
+                    </div>
+                    <div class="rewardContent">
+                            <h2>100,000원</h2>
+                            <h3>스탠다드 에디션</h3>
+                            <ul>
+                                <li>카트리지 8비트 가정용 패미콤</li>
+                                <li>CPU 리코 2A03 1.79 MHz</li>
+                                <li>패미콤 컨트롤러</li>
+                                <li>패미콤 3종 게임 디스크</li>
+                            </ul>    
+                    </div>
                 </div>
-                <div class="rewardContent">
-                        <h2>300,000원</h2>
-                        <h3>디지털 에디션</h3>
-                        <ul>
-                            <li>카트리지 8비트 가정용 패미콤</li>
-                            <li>CPU 리코 2A03 1.79 MHz</li>
-                            <li>탈착식 뉴 패미콤 컨트롤러</li>
-                            <li>전원 어댑터</li>
-                            <li>패미콤 7종 게임 디스크</li>
-                        </ul>    
+                <div class="FD_reward_button">
+                    <button id="donationBtn">후원하기</button>
+                    <button id="shareBtn"><i class="fa-solid fa-share-nodes"></i></button>
                 </div>
-                <div class="rewardContent">
-                        <h2>100,000원</h2>
-                        <h3>스탠다드 에디션</h3>
-                        <ul>
-                            <li>카트리지 8비트 가정용 패미콤</li>
-                            <li>CPU 리코 2A03 1.79 MHz</li>
-                            <li>패미콤 컨트롤러</li>
-                            <li>패미콤 3종 게임 디스크</li>
-                        </ul>    
-                </div>
-            </div>
-            <div class="FD_reward_button">
-                <button class="donation">후원하기</button>
-                <button class="share"><i class="fa-solid fa-share-nodes"></i></button>
-            </div>
+            </section>    
         </section>
+        
         <!-- 푸터 영역 -->
         <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
         <script src="../../js/addEventListener.js"></script>
+        <script src="../../js/funding/shareModal.js"></script>
     </body>
 </html>

@@ -111,7 +111,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     height: 100px;
     z-index: 15;
 }
-.FD_right_bottomForm .donation{
+.FD_right_bottomForm #donationBtn{
     font-size: 35px;
     font-weight: bold;
     width: 250px;
@@ -121,12 +121,98 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     margin-left: 45px;
     border-radius: 5%;
 }
-.FD_right_bottomForm .share{
+.FD_right_bottomForm #shareBtn{
     margin-left: 10px;
     font-size: 35px;
     text-align: center;
     width: 60px;
     height: 60px;
+}
+/* share modal */
+
+#shareModal{
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+ #shareModal .shareBody{
+    width: 400px;
+    height: 150px;
+    padding: 30px 30px;
+    position: absolute;
+    top: 500px;
+    left: 800px;
+    margin: 0 auto;
+    border: 1px solid #777;
+    background-color: white;
+    border-radius: 20px;
+}
+#shareModal .share_url{
+    background-color: gainsboro;
+    border: 1px solid #999393;
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 20px;
+}
+.shareBody h1{
+    margin-bottom: 150px;
+    margin-top: 0px;
+    width: 600px;
+    position: relative;
+}
+.share_url p{
+    margin-left: 20px;
+    font-size: 20px;
+    position: absolute;
+    top: -10px;
+}
+.share_url button{
+    background-color: #2c1810;
+    height: 50px;
+    width: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #2c1810;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 320px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.share_url button:hover{
+    background-color: #777;
+    border: 2px solid #777;
+}
+#closeBtn{
+    font-weight: bold;
+    color: #000000;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 130px;
+    margin-right: -40px;
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    right: -70px;
+}
+.divider{
+    margin: 20px 0;
+    position: absolute;
+    top: 170px;
+    width: 400px;
 }
 /* FD_reportButton */
 .FD_reportButton div{
@@ -165,6 +251,9 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     color: #000000;
     text-decoration: none;
 }
+.FD_detailBar .detailBar_introduce:hover, .detailBar_community:hover, .detailBar_refund:hover, .detailBar_update:hover{
+    background-color: rgb(104, 104, 104);
+}
 
 /* 펀딩 프로젝트 환불/문의칸 */
 .FD_projectRefund{
@@ -188,14 +277,19 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     margin-right: 40px;
 }
 /* 리워드 박스 */
+.FD_reward_scrollSpace{
+    height: 3000px;
+}
 .FD_rewardBar{
     border: 1px solid black;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     position: absolute;
     width: 378px;
     left: 922px;
     top: 1025px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .rewardBar{
     height: 1200px;
@@ -204,6 +298,10 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
 .rewardBar h2{
     font-size:30px;
     font-weight: bold;
+    margin-left: 20px;
+}
+.rewardBar h3{
+    margin-left: 20px;
 }
 .rewardBar .rewardContent {
     background-color: rgb(199, 199, 199);
@@ -212,20 +310,26 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     height: 300px;
     border: 1px solid black;
     margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.FD_reward_button .donation{
+.rewardContent:hover{
+    background-color: gainsboro;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.FD_reward_button #donationBtn{
     font-size: 35px;
     font-weight: bold;
     width: 250px;
     height: 70px;
     background-color: #2c1810;
     color: white;
-    border-radius: 5%;
+    border-radius: 10px;
     position: absolute;
     right: 100px;
     top: 1100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.FD_reward_button .share{
+.FD_reward_button #shareBtn{
     margin-left: 10px;
     font-size: 35px;
     text-align: center;
@@ -234,4 +338,5 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     position: absolute;
     top: 1105px;
     right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
