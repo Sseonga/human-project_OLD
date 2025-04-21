@@ -1,3 +1,4 @@
+//하트기능
 document.addEventListener('DOMContentLoaded', function () {
     const heartBtn = document.querySelector('.comm_right_heart');
     if (!heartBtn) {
@@ -51,3 +52,44 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+//투표기능
+document.addEventListener("DOMContentLoaded", function () {
+    const voteNumElement = document.querySelector(".voteNum");
+    const voteBtn = document.getElementById("donationBtn");
+
+    const VOTE_KEY = "voted_eggmon11"; // 게시물 ID 기준으로 키 관리
+    const savedVote = localStorage.getItem(VOTE_KEY);
+    let hasVoted = savedVote === "true";
+
+    // 문자열 숫자 → 정수
+    function parseNumber(text) {
+      return parseInt(text.replace(/,/g, ""), 10);
+    }
+
+    // 정수 → 문자열 숫자(콤마 포함)
+    function formatNumber(num) {
+      return num.toLocaleString("ko-KR");
+    }
+
+    // 초기 상태 세팅
+    function updateVoteDisplay() {
+      let baseVote = 3200;
+      const voteCount = hasVoted ? baseVote + 1 : baseVote;
+      voteNumElement.textContent = formatNumber(voteCount) + "명";
+    }
+
+    updateVoteDisplay(); // 페이지 로드시 반영
+
+    voteBtn.addEventListener("click", () => {
+      hasVoted = !hasVoted;
+
+      // localStorage에 반영
+      localStorage.setItem(VOTE_KEY, hasVoted.toString());
+
+      // 숫자 갱신
+      updateVoteDisplay();
+
+      // 알림
+      alert(hasVoted ? "투표했습니다." : "투표를 취소했습니다.");
+    });
+  });
