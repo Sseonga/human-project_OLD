@@ -1,31 +1,33 @@
-document.querySelector('.alarm').addEventListener('click', function(e) {
-    e.preventDefault();
-    const dropdown = document.querySelector('.alarm-dropdown');
-    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
-}); 
 document.addEventListener('DOMContentLoaded', function() {
-    // 마이페이지 드롭다운 관련 요소
+    // 알림 드롭다운 관련 기능
+    const alarmButton = document.querySelector('.alarm');
+    const alarmDropdown = document.querySelector('.alarm-dropdown');
+
+    if (alarmButton && alarmDropdown) {
+        alarmButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            alarmDropdown.style.display = alarmDropdown.style.display === 'block' ? 'none' : 'block';
+        });
+    }
+
+    // 마이페이지 드롭다운 관련 기능
     const mypageButton = document.querySelector('.mypage');
     const mypageDropdown = document.querySelector('.mypage-dropdown');
 
-    // 마이페이지 아이콘 클릭 시 드롭다운 토글
-    mypageButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        mypageDropdown.style.display = mypageDropdown.style.display === 'block' ? 'none' : 'block';
-    });
-
-    // 다른 영역 클릭 시 드롭다운 닫기
-    document.addEventListener('click', function(e) {
-        if (!mypageButton.contains(e.target) && !mypageDropdown.contains(e.target)) {
-            mypageDropdown.classList.remove('show');
-        }
-    });
-
-    // 메뉴 아이템 클릭 시 드롭다운 닫기
-    const menuItems = document.querySelectorAll('.menu-item');
-    menuItems.forEach(item => {
-        item.addEventListener('click', function() {
-            mypageDropdown.classList.remove('show');
+    if (mypageButton && mypageDropdown) {
+        mypageButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            mypageDropdown.style.display = mypageDropdown.style.display === 'block' ? 'none' : 'block';
         });
+    }
+
+    // 드롭다운 외부 클릭 시 닫기
+    document.addEventListener('click', function(e) {
+        if (mypageButton && mypageDropdown && !mypageButton.contains(e.target) && !mypageDropdown.contains(e.target)) {
+            mypageDropdown.style.display = 'none';
+        }
+        if (alarmButton && alarmDropdown && !alarmButton.contains(e.target) && !alarmDropdown.contains(e.target)) {
+            alarmDropdown.style.display = 'none';
+        }
     });
 }); 
