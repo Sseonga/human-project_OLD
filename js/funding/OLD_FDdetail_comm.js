@@ -64,3 +64,8 @@ $(this).parent().remove()
                 $(this).find('i').removeClass('fa-regular').addClass('fa-solid');
             }
         });
+
+        //댓글창 껐다키기
+        $(document).on('click','#commBtn',function(){
+            $('#FD_commentBox').slideToggle(400);
+        });

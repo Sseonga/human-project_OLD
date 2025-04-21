@@ -383,8 +383,9 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     background-color: #999393;
     height: 900px;
     margin-top: 20px;
-    border-radius: 10%;
+    border-radius: 5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
     /* max-height: 0;  */
     /* overflow: hidden; */
     /* transition: max-height 0.5s ease; */
