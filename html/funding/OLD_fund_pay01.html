@@ -51,9 +51,11 @@
                 
                     <!-- 기타 결제 수단 -->
                     <div class="other-pay">
-                        <div class="pay-top">
-                            <label><input type="radio" name="pay" checked> 카드 간편결제</label>
-                            <label><input type="radio" name="pay"> 계좌 이체</label>
+                        <div class="top-group" id="top-group">
+                            <div class="pay-top">
+                                <label><input type="radio" name="pay" checked> 카드 간편결제</label>
+                                <label><input type="radio" name="pay"> 계좌 이체</label>
+                            </div>
                         </div>
                         <div class="pay-bottom">
                             <button class="add-card">+ 카드 등록</button>
@@ -87,7 +89,16 @@
                 </div>
                 
                 <p>카드번호</p>
-                <input type="text" placeholder="0000 - 0000 - 0000 - 0000" class="card-number" />
+                <div class="card-number-group">
+                    <select class="card-brand">
+                        <option value="국민">국민</option>
+                        <option value="삼성">삼성</option>
+                        <option value="현대">현대</option>
+                        <option value="신한">신한</option>
+                        <option value="롯데">롯데</option>
+                    </select>
+                    <input type="text" placeholder="0000 - 0000 - 0000 - 0000" class="card-number" id="card-number" />
+                </div>
                 
                 <p>카드 유효기간</p>
                 <div class="card-expiry">
@@ -110,7 +121,7 @@
                     <input type="checkbox" checked /> 기본 결제수단으로 등록
                 </label>
             
-                <button type="submit" class="submit-btn">등록 완료</button>
+                <button type="button" class="submit-btn" id="submit-btn">등록 완료</button>
                 </form>
             </div>
         </div>
@@ -178,6 +189,7 @@
         <!-- 푸터 영역 -->
         <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
         <script src="../../js/addEventListener.js"></script>
+        <script src="../../js/funding/OLD_fund_pay_01.js"></script>
     </body>
     <script>
         const body = document.querySelector('body');
@@ -186,13 +198,14 @@
         const btnOpenPopup = document.querySelector('.btn-open-popup');
         const addCard = document.querySelector('.add-card');
         const btnClose = document.querySelectorAll('.btn-close');
-    
+        // const submitBtn = document.querySelector('.submit-btn');
+        // 모달창 닫기 함수
         function closeModals() {
             modal.classList.remove('show');
             modalCard.classList.remove('show');
             body.style.overflow = 'auto';
         }
-
+        // 결제모달창 띄우기
         btnOpenPopup.addEventListener('click', () => {
             modal.classList.toggle('show');
     
@@ -200,15 +213,30 @@
                 body.style.overflow = 'hidden';
             }
         });
-
+        // 카드등록 버튼 -> 카드등록화면
         addCard.addEventListener('click', () => {
             modalCard.classList.add('show');
             modal.classList.remove('show');
             body.style.overflow = 'hidden';
-        });
+            
+            // 카드번호에 숫자만
+            const cardNumInput = document.getElementById('card-number');
 
+            cardNumInput.addEventListener('input', () => {
+                let onlyNums = cardNumInput.value.replace(/[^0-9]/g, '').slice(0, 16);
+                let formatted = onlyNums.match(/.{1,4}/g)?.join(' - ') || '';
+                cardNumInput.value = formatted;
+            });
+        });
+        // x버튼클릭시 결제꺼짐
         btnClose.forEach((btn) => {
             btn.addEventListener('click', closeModals);
+        });
+        // 카드등록완료 버튼 -> 다시 결제화면
+        submitBtn.addEventListener('click', () => {
+            modalCard.classList.remove('show');
+            modal.classList.add('show');
+            body.style.overflow = 'hidden';
         });
     </script>
 </html>

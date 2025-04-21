@@ -25,7 +25,7 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 750px;
-  height: 500px;
+  height: 600px;
   gap: 20px;
   padding: 10px;
 
@@ -84,8 +84,12 @@
   flex-direction: column;
   margin-top: auto;
 }
+.other-pay .top-group{
+  display: flex;
+  flex-direction: column;
+}
 .pay-top {
-  margin: 10px;
+  margin: 0px;
   width: 74%;
   padding: 12px;
   font-size: 16px;
@@ -193,4 +197,16 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+.card-number-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.card-brand {
+  padding: 8px;
+  font-size: 14px;
+}
+.card-number {
+  flex: 1;
 }
