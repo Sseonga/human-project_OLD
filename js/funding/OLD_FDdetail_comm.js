@@ -31,7 +31,7 @@ $(document).ready(() => {
             <button class="removeCom">삭제</button>
         </div>`;
 
-        $('.commentList').prepend(comment);
+        $('.commentList').append(comment);
         $('input[type=text]').val("")
     });
 });
@@ -65,7 +65,7 @@ $(this).parent().remove()
             }
         });
 
-        //댓글창 껐다키기
+        //댓글창 껐다키기ㅠㅠㅠㅠㅠㅠ
         $(document).on('click','#commBtn',function(){
             $('#FD_commentBox').slideToggle(400);
         });

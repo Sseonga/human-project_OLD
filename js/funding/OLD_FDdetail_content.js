@@ -34,31 +34,83 @@
 //     });
 // });
 
+//FD_mainDetial 이미지 슬라이드
+document.addEventListener('DOMContentLoaded', () => {
+    const mainImage = document.querySelector('.FD_detail_mainImage img');
+    const imageList = document.querySelectorAll('.FD_detail_images img');
+    const changeBtn = document.querySelector('.FD_detail_button');
+
+    let currentIndex = 0;
+
+    changeBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % imageList.length;
+      mainImage.src = imageList[currentIndex].src;
+    });
+  });
+
 //후원하기 버튼 클릭시 리워드바로 이동(안됨 수정해야함)
-('#donationBtn').click(() => {
-    document.getElementById(".rewardContent").scrollIntoView({
-        behavior: 'smooth'
+document.addEventListener('DOMContentLoaded',function(){
+    const startScroll = document.getElementById('donationBtn');
+    const finishScroll = document.getElementById('rewardBar');
+
+    startScroll.addEventListener('click',function(){
+        if(finishScroll){
+            finishScroll/this.scrollIntoView({behavior: 'smooth'});
+        }
     });
 });
 
-//링크 복사하기(얘도 안되네^^?)
-const copyBtn = document.getElementById('urlBtn');
-
-copyBtn.addEventListener('click',function(){
-    const textCopy = document.getElementById('copyUrl');
-
-    textCopy.select();
-    
-    document.execCommand('copy');
-    window.getSelection().removeAllRanges();
-    
-    alert('복사 완료되었습니다.'+textCopy.value);
-});
-
+//링크 복사하기
+// input 태그 선택자로 선택
+window.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('urlBtn');
+    const input = document.getElementById('copyValue');
+  
+    button.addEventListener('click', function () {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(input.value)
+          .then(() => {
+            alert('복사되었습니다.');
+          })
+          .catch(err => {
+            alert('복사 실패: ' + err);
+            console.error(err);
+          });
+      } else {
+        alert('클립보드 API를 사용할 수 없습니다. HTTPS 환경에서 실행해주세요.');
+      }
+    });
+  });
 //상단 mainDetail 화살표 클릭 시 이동
 
 
-//댓글창 하트 눌렀을 때 숫자 변동+하트 변동
 
 //리워드 선택 후 결제창 연동
+// 리워드 선택
+document.addEventListener('DOMContentLoaded', function () {
+    const rewardBoxes = document.querySelectorAll('.rewardContent');
+  
+    rewardBoxes.forEach(box => {
+      box.addEventListener('click', function (e) {
+        const radio = box.querySelector('input[type="radio"]');
+        if (radio) {
+          radio.checked = true;
+          radio.dispatchEvent(new Event('change')); 
+        }
+      });
+    });
+  });
 
+//   결제창 연동
+// document.addEventListener('DOMContentLoaded',function(){
+//     const modalContainer = document.getElementById('donationModal');
+//     const donationBtn = document.getElementById('donationBtn2');
+
+//     fetch('OLD_fund_pay01.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         modalContainer.innerHTML = data;
+
+//         const modal = document.getElementById 아 못하겠다
+//     })
+// })
