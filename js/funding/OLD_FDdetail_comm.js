@@ -31,7 +31,7 @@ $(document).ready(() => {
             <button class="removeCom">삭제</button>
         </div>`;
 
-        $('.commentList').prepend(comment);
+        $('.commentList').append(comment);
         $('input[type=text]').val("")
     });
 });

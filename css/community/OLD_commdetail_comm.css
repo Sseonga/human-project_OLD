@@ -267,7 +267,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
 /* 커뮤니티 프로젝트 소개칸 */
 .comm_projectCommunity{
     width: 1205px;
-    height: 2200px;
+    height: 2800px;
     margin-left: 98px;
     background-color: gainsboro;
     position: relative;
@@ -325,7 +325,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
 }
 .comm_boxList{
     width: 1205px;
-    height: 1905px;
+    height: 2400px;
     top: 160px;
     position: relative;
     z-index: -2;
@@ -540,7 +540,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
 /* 커뮤니티 댓글창 */
 #comm_commentBox{
     background-color: #999393;
-    height: 600px;
+    height: 1000px;
     width: 900px;
     border-radius: 50px;
     position: absolute;
@@ -621,4 +621,52 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
 }
 input[type=text]{
     z-index: 5;
+}
+.commentList{
+    position: relative;
+    outline: 1px solid red;
+  }
+  .comment_new{
+    background-color: rgb(226, 226, 226);
+    width:700px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .comment_new i{
+    position: absolute;
+    font-size: 60px;
+    top: 20px;
+    left: 20px;
+    color: #2c1810;
+}
+.comment_new h2{
+    position: absolute;
+    top: 0px;
+    font-size: 20px;
+    left: 90px;
+}
+.comment_new h3{
+    position: absolute;
+    top: -5px;
+    font-size: 15px;
+    left: 650px;
+    color: #2c1810;
+    width: 100px;
+}
+.comment_new .removeCom{
+    position: absolute;
+    left: 620px;
+    top: 65px;
+}
+.comment_new p{
+    margin-top: 20px;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    font-size: 15px;
 }
