@@ -10,14 +10,19 @@
         <link rel="stylesheet" href="../../css/notice/OLD_notice_list.css">
     </head>
     <body>
-        <script src="../../js/notice/OLD_notice_list.js"></script>
         <div data-include-path="../../html/main/OLD_main_menu.html"></div>
         <!-- 헤더 영역 -->
-        <div class="slide">
-            <button onclick="prevSlide()">←</button>
-            <span id="slideCount">1/5</span>
-            <img id="slideImg" src="../../images/main/sample2.jpg" alt="slide imagine">
-            <button onclick="nextSlide()">→</button>
+        <div class="slideContainer">
+            <div class="slide"><img src="../..\\\\/images/funding/FD_detail_image1.jpg" alt="이미지1"></div>
+            <div class="slide"><img src="../../images/funding/FD_detail_image2.jpg" alt="이미지2"></div>
+            <div class="slide"><img src="../../images/funding/FD_detail_image3.jpg" alt="이미지3"></div>
+            <div class="slide"><img src="../../images/funding/FD_detail_image4.jpg" alt="이미지4"></div>
+            <div class="slide"><img src="../../images/funding/FD_detail_image5.jpg" alt="이미지5"></div>
+
+            <button class="prev" onclick="prevSlide()">←</button>
+            <button class="next" onclick="nextSlide()">→</button>
+            
+            <div class="slidePage">1/5</div>
         </div>
 
         <h2>공지사항</h2>
@@ -71,7 +76,7 @@
             <span>9</span>
             <span>10</span>
         </div>
-
+        <script src="../../js/notice/OLD_notice_list.js"></script>
         <!-- 푸터 영역 -->
         <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
         <script src="../../js/addEventListener.js"></script>
