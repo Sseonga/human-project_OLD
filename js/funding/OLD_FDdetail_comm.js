@@ -39,3 +39,28 @@ $(document).ready(() => {
 $(document).on('click','.removeCom',function(){
 $(this).parent().remove()
 });
+
+// 1,2 => on('click')사용
+        // 1. '좋아요' 버튼을 눌렀을 때, 0->1 / 좋아요 -> 좋아요 취소
+        //      => id를 dislike로 변경
+        // 2. '좋아요 취소' 버튼을 눌렀을 때, 1-> 0 / 좋아요 취소 -> 좋아요
+        //      => id를 like로 변경
+        // 3. 댓글을 작성
+        // 내가 적은 댓글 + 삭제버튼
+        // 댓글을 작성한 후 => input창은 비워줄것!
+        // 삭제 버튼 => 내가 삭제한 '그 댓글'만 지워줄 것!
+
+        $(document).on('click','#heartBtn',function(){
+            const $heartScore = $(this).find('.heartScore');
+            const currentScore = parseInt($heartScore.text());
+
+            if($(this).attr('data-liked')==='true'){
+                $heartScore.text(currentScore-1);
+                $(this).attr('data-liked','false');
+                $(this).find('i').removeClass('fa-solid').addClass('fa-regular');
+            }else{
+                $heartScore.text(currentScore+1);
+                $(this).attr('data-liked','true'); 
+                $(this).find('i').removeClass('fa-regular').addClass('fa-solid');
+            }
+        });
