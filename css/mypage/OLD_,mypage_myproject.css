@@ -54,7 +54,7 @@ div .pagename{
 }
 
 .array_pj{
-    display:flex;
+    
 
     width:1100px;
     background-color: white;
@@ -70,6 +70,21 @@ span a{
 }
 
 .pj_images{
+    display:flex;
+    width:100%;
+    height:50%;
+    gap:20px;
+}
 
-    
+/* .single_image{
+    width:30%;
+    height:60%;
+    margin:auto;
+} */
+
+.single_image a {
+    display: block;
+    width:30%;
+    height:60%;
+    margin:auto;
 }
