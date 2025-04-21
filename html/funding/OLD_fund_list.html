@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../../css/funding/OLD_fund_list.css">
     </head>
     <body>
+        <script src="../../js/funding/OLD_fund_list.js"></script>
         <div data-include-path="../../html/main/OLD_main_menu.html"></div>
         <!-- 헤더 영역 -->
         <!-- 메인 영역 -->
@@ -20,7 +21,8 @@
                     <img src="../../images/main/search.png" class="search_icon">
                 </button>
             </div>
-            <div class="container">
+
+            <div class="category">
                 <nav>
                     <ul>
                         <li>
@@ -37,83 +39,100 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- <div class="subject">
-                    <div class="right font-sm">
-                        <div class="dropdown">
-                            <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="pointer">
-                                <span>최신순</span>
-                                <i class="fa fa-angle-down pl-1">
-                                    ::before
-                                </i>
-                            </div>
-                            <div class="dropdown-menu shadow">
-                                <a class="dropdown-item pointer on">인기순</a>
-                                <a class="dropdown-item pointer on">모집금액순</a>
-                                <a class="dropdown-item pointer on">마감임박순</a>
-                                <a class="dropdown-item pointer on">최신순</a>
-                                <a class="dropdown-item pointer on">추천순</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="cards reward">
-                <ul class="tight">
+
+            <div class="progress">
+                <ul>
                     <li>
-                        <div class="card" data-component-name="componentCard" data-page="reward">
-                            <div class="inner">
-                                <a href="/channel/327628" class="profile no-underline w-100" title="진행자 채널로 이동" data-component-name="componentAnchor">
-                                    <span class="img" data-component-name="componentMemberPicture" style="background-image:url("/profile/327628"); width:28px; height:28px;"></span>
-                                    <div class="font-xs ellipsis">
-                                        <span>(주)영화사 아리랑</span>
-                                    </div>
-                                </a>
-                                <div class="cover">
-                                    <a href="#" class="thumb pointer" style="padding-top:100%">
-                                        <div class="img" style="background-image:url("#"); background-position: center center;"></div>
-                                    </a>
-                                    <button title="관심 프로젝트" class="interest pointer img" style="opacity: 1; background-image: url("/assets/ico/component.combined0card.heart.svg");"></button>
-                                </div>
-                            </div>
-                        </div>
+                        <button>진행중인 펀딩</button>
+                    </li>
+                    <li>
+                        <button>종료된 펀딩</button>
                     </li>
                 </ul>
             </div>
-            <form action="./" method="get" class="bd_pg clear">
-                <fieldset>
-                    <legend class="blind">게시판 목록 페이징</legend>
-                    <input type="hidden" name="mid" value="best">
-                    <input type="hidden" name="sort_index" value>
-                    <strong class="direction">
-                        <i class="fa fa-angle-left">
-                            ::before
-                        </i>
-                        "이전"
-                    </strong>
-                    <a class="frst_last  this" href="/best">1</a>
-                    <a href="/index.php?mid=best&page=2">2</a>
-                    <span class="bubble">
-                        <a href="#" class="tg_btn2" data-href=".bd_go_page" title>...</a>
-                    </span>
-                    <a href="/index.php?mid=best&page=11" class="direction">
-                        "다음"
-                        <i class="fa fa-angle-right">
-                            ::before
-                        </i>
-                    </a>
-                    <div class="bd_go_page tg_cn2 wrp">
-                        <button type="button" class="tg_blur2"></button>
-                        <input type="number" name="page" class="itx" value="1" min="1">
-                        "/ 10,001이상"
-                        <button type="submit" class="bd_btn">페이지</button>
-                        <span class="edge"></span>
-                        <i class="ie8_only bl"></i>
-                        <i class="ie8_only br"></i>
-                        <button type="button" class="tg_blur2"></button>
+
+            <div class="container">
+                <div class="subject">
+                    <h2>게임 게시판</h2>
+                    <div class="font-sm">
+                        <button><strong>인기순</strong></button>
+                        <button><strong>모집금액순</strong></button>
+                        <button><strong>마감임박순</strong></button>
+                        <button><strong>최신순</strong></button>
+                        <button><strong>추천순</strong></button>
                     </div>
-                </fieldset>
-                ::after
-            </form> -->
+                </div>
+                
+                <div class="funding-cards">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="../funding/OLD_FDdetail_content.html">
+                                    <img src="../../images/funding/FD_detail_mainImage.jpg" alt="프로젝트 이미지" class="project-image">
+                                    [팩게임]Super Mario Bros.2
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="../funding/OLD_FDdetail_content.html">
+                                    <img src="../../images/funding/FD_detail_mainImage.jpg" alt="프로젝트 이미지" class="project-image">
+                                    [팩게임]Super Mario Bros.2
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="../funding/OLD_FDdetail_content.html">
+                                    <img src="../../images/funding/FD_detail_mainImage.jpg" alt="프로젝트 이미지" class="project-image">
+                                    [팩게임]Super Mario Bros.2
+                                </a>
+                            </div>
+                            <button class="btn_like">like</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="funding-cards">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="../funding/OLD_FDdetail_content.html">
+                                    <img src="../../images/funding/FD_detail_mainImage.jpg" alt="프로젝트 이미지" class="project-image">
+                                    [팩게임]Super Mario Bros.2
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="../funding/OLD_FDdetail_content.html">
+                                    <img src="../../images/funding/FD_detail_mainImage.jpg" alt="프로젝트 이미지" class="project-image">
+                                    [팩게임]Super Mario Bros.2
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="../funding/OLD_FDdetail_content.html">
+                                    <img src="../../images/funding/FD_detail_mainImage.jpg" alt="프로젝트 이미지" class="project-image">
+                                    [팩게임]Super Mario Bros.2
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pagenavi">
+                <a href="#">< Previous</a>
+                <a href="#" class="nowpg">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a> ... </a>
+                <a href="#">10</a>
+                <a href="#">11</a>
+                <a href="#">Next ></a>
+            </div>
         </main>
 
 
