@@ -1,3 +1,4 @@
+//하트기능
 document.addEventListener('DOMContentLoaded', function () {
     const heartBtn = document.querySelector('.comm_right_heart');
     if (!heartBtn) {
@@ -49,5 +50,40 @@ document.addEventListener('DOMContentLoaded', function () {
             heartIcon.style.color = 'red';
             updateHeartDisplay(currentCount + 1);
         }
+    });
+});
+//투표기능
+document.addEventListener("DOMContentLoaded", function () {
+    const voteNumElement = document.querySelector(".voteNum");
+    const voteBtn = document.getElementById("donationBtn");
+
+    const VOTE_KEY = "voted_eggmon11"; // 게시물 ID 기준으로 키 관리
+    const savedVote = localStorage.getItem(VOTE_KEY);
+    let hasVoted = savedVote === "true";
+
+    function parseNumber(text) {
+        return parseInt(text.replace(/,/g, ""), 10);
+    }
+
+    function formatNumber(num) {
+        return num.toLocaleString("ko-KR");
+    }
+
+    function updateVoteDisplay() {
+        const baseVote = 3200;
+        const voteCount = hasVoted ? baseVote + 1 : baseVote;
+        voteNumElement.textContent = formatNumber(voteCount) + "명";
+
+        // 버튼 텍스트도 같이 업데이트
+        voteBtn.textContent = hasVoted ? "투표 취소하기" : "투표하기";
+    }
+
+    updateVoteDisplay(); // 초기 상태 적용
+
+    voteBtn.addEventListener("click", () => {
+        hasVoted = !hasVoted;
+        localStorage.setItem(VOTE_KEY, hasVoted.toString());
+        updateVoteDisplay();
+        alert(hasVoted ? "투표했습니다." : "투표를 취소했습니다.");
     });
 });
