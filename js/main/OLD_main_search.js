@@ -76,7 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // 최근 검색어 삭제
-    clearButton.addEventListener('click', function() {
+    clearButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
         recentSearches = [];
         localStorage.removeItem('recentSearches');
         updateRecentSearches();
