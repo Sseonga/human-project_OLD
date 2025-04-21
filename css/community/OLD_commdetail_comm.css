@@ -117,7 +117,6 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
 }
 .comm_right_bottomForm{
     height: 100px;
-    z-index: 15;
 }
 .comm_right_bottomForm #donationBtn{
     font-size: 35px;
@@ -272,7 +271,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
     margin-left: 98px;
     background-color: gainsboro;
     position: relative;
-    z-index: -2;
+    z-index: 0;
     margin-top: 60px;
 }
 
@@ -285,6 +284,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
     position: relative;
     top: 80px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 .comm_sendBar input{
     width: 700px;
@@ -325,7 +325,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
 }
 .comm_boxList{
     width: 1205px;
-    height: 1500px;
+    height: 1905px;
     top: 160px;
     position: relative;
     z-index: -2;
@@ -618,4 +618,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
     position: absolute;
     top: 20px;
     right:30px;
+}
+input[type=text]{
+    z-index: 5;
 }
