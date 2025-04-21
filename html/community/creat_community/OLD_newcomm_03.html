@@ -5,12 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OLD_newcomm_03</title>
-        <link rel="stylesheet" href="../../../css/main/OLD_main_menu.css">
+        <link rel="stylesheet" href="../../../css/main/OLD_main_menu_1.css">
         <link rel="stylesheet" href="../../../css/main/OLD_bottom_bar.css">
         <link rel="stylesheet" href="../../../css/community/create_community/OLD_newcomm_03.css">
     </head>
     <body>
-        <div data-include-path="../../../html/main/OLD_main_menu.html"></div>
+        <header></header>
+        <div class="blank"></div>
         <!-- 헤더 영역 -->
         <div class="container">
             <div class="writing-order">
@@ -43,10 +44,98 @@
             </div>
         </div>
 
-
         <!-- 푸터 영역 -->
         <div data-include-path="../../../html/main/OLD_bottom_bar.html"></div>
+        <script src="../../../js/main/OLD_main_menu_1.js"></script>
         <script src="../../../js/addEventListener.js"></script>
         <script src="../../../js/community/create_community/OLD_newcomm_03.js"></script>
+        <script>
+            // 헤더 요소에 올바른 내용을 로드하는 스크립트
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('../../../html/main/OLD_main_menu_1.html')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('네트워크 응답이 올바르지 않습니다');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        // 이미지 경로 수정 (절대 경로 → 상대 경로)
+                        let modifiedData = data.replace('/images/main/image-removebg-preview.png', '../../../images/main/image-removebg-preview.png');
+                        
+                        // 로고 링크 경로 수정
+                        modifiedData = modifiedData.replace('href="/html/main/OLD_main_page1.html"', 'href="../../../html/main/OLD_main_page1.html"');
+                        
+                        // 로그아웃 버튼 경로 수정
+                        modifiedData = modifiedData.replace('href="/html/main/OLD_main_page.html"', 'href="../../../html/main/OLD_main_page.html"');
+                        
+                        // 펀딩 링크 수정
+                        modifiedData = modifiedData.replace('href="../funding/OLD_fund_list.html"', 'href="../../../html/funding/OLD_fund_list.html"');
+                        
+                        // 커뮤니티 링크 수정
+                        modifiedData = modifiedData.replace('href="../community/OLD_comm_list_game.html"', 'href="../../../html/community/OLD_comm_list_game.html"');
+                        
+                        // 알림 이미지 수정
+                        modifiedData = modifiedData.replace(/src="\.\.\/\.\.\/images\/main\/alarm-removebg-preview\.png"/g, 'src="../../../images/main/alarm-removebg-preview.png"');
+                        
+                        // 설정 이미지 수정
+                        modifiedData = modifiedData.replace(/src="\.\.\/\.\.\/images\/main\/setting\.png"/g, 'src="../../../images/main/setting.png"');
+                        
+                        // 마이페이지 이미지 수정
+                        modifiedData = modifiedData.replace(/src="\.\.\/\.\.\/images\/main\/mypage\.png"/g, 'src="../../../images/main/mypage.png"');
+                        
+                        // 프로젝트 만들기 링크 수정
+                        modifiedData = modifiedData.replace('href="../community/creat_community/OLD_newcomm_01.html"', 'href="../../../html/community/creat_community/OLD_newcomm_01.html"');
+                        
+                        // 드롭다운 메뉴 링크 수정
+                        modifiedData = modifiedData.replace(/href="\.\.\/mypage\//g, 'href="../../../html/mypage/');
+                        
+                        // 드롭다운 메뉴 내 이미지 경로 수정
+                        modifiedData = modifiedData.replace(/src="..\/..\/images\/mypage\//g, 'src="../../../images/mypage/');
+                        
+                        // header 태그가 아닌 header 태그 내부의 내용만 추출
+                        let parser = new DOMParser();
+                        let doc = parser.parseFromString(modifiedData, 'text/html');
+                        let headerContent = doc.querySelector('header').innerHTML;
+                        
+                        // 헤더 내용 삽입
+                        document.querySelector('header').innerHTML = headerContent;
+                        
+                        // 이벤트 리스너 설정
+                        const mypageButton = document.querySelector('.mypage');
+                        const mypageDropdown = document.querySelector('.mypage-dropdown');
+                        
+                        if (mypageButton && mypageDropdown) {
+                            mypageButton.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                mypageDropdown.style.display = mypageDropdown.style.display === 'block' ? 'none' : 'block';
+                            });
+                        }
+                        
+                        const alarmButton = document.querySelector('.alarm');
+                        const alarmDropdown = document.querySelector('.alarm-dropdown');
+                        
+                        if (alarmButton && alarmDropdown) {
+                            alarmButton.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                alarmDropdown.style.display = alarmDropdown.style.display === 'block' ? 'none' : 'block';
+                            });
+                        }
+
+                        // 다른 영역 클릭 시 드롭다운 닫기
+                        document.addEventListener('click', function(e) {
+                            if (mypageButton && mypageDropdown && !mypageButton.contains(e.target) && !mypageDropdown.contains(e.target)) {
+                                mypageDropdown.style.display = 'none';
+                            }
+                            if (alarmButton && alarmDropdown && !alarmButton.contains(e.target) && !alarmDropdown.contains(e.target)) {
+                                alarmDropdown.style.display = 'none';
+                            }
+                        });
+                    })
+                    .catch(error => {
+                        console.error('메뉴 로딩 오류:', error);
+                    });
+            });
+        </script>
     </body>
 </html>

@@ -8,3 +8,4 @@ $('#send_button').click(()=>{
 $(document).on('click','.removeComm',function(){
     $(this).parent().remove()
 })
+

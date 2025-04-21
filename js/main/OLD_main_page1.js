@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // 이미지 경로 수정 (절대 경로 → 상대 경로)
             let modifiedData = data.replace('/images/main/image-removebg-preview.png', '../../images/main/image-removebg-preview.png');
             
+            // 로고 링크 경로 수정
+            modifiedData = modifiedData.replace('href="/html/main/OLD_main_page1.html"', 'href="../../html/main/OLD_main_page1.html"');
+            
+            // 로그아웃 버튼 경로 수정
+            modifiedData = modifiedData.replace('href="/html/main/OLD_main_page.html"', 'href="../../html/main/OLD_main_page.html"');
+            
             // header 태그가 아닌 header 태그 내부의 내용만 추출
             let parser = new DOMParser();
             let doc = parser.parseFromString(modifiedData, 'text/html');

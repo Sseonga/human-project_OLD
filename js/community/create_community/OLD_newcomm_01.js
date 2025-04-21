@@ -45,11 +45,11 @@ if (dayDiff < 7 || dayDiff > 60) {
 });
 
 // 프로젝트명 영어제한  
-    const urlInput = document.getElementById('url-slug');
+const urlInput = document.getElementById('url-slug');
 
-    urlInput.addEventListener('input', () => {
-    urlInput.value = urlInput.value.replace(/[^a-zA-Z]/g, '');
-    });
+urlInput.addEventListener('input', () => {
+    urlInput.value = urlInput.value.replace(/[^a-zA-Z0-9]/g, '');
+});
 
 // 대표이미지 미리보기
 const fileInput = document.getElementById('image-upload');
