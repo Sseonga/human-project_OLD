@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OLD_fdadd_01</title>
+        <link rel="stylesheet" href="../../../css/main/OLD_main_menu.css">
+        <link rel="stylesheet" href="../../../css/main/OLD_bottom_bar.css">
+        <link rel="stylesheet" href="../../../css/funding/funding_setup/OLD_fdadd_01.css">
+    </head>
+    <body>
+        <div data-include-path="../../../html/main/OLD_main_menu.html"></div>
+        <!-- 헤더 영역 -->
+        <div class="container">
+            <div class="writing-order">
+                프로젝트 만들기 
+                <ul>
+                    <li><a href="./OLD_fdadd_01.html">1.기본정보</a></li>
+                    <li><a href="./OLD_fdadd_02.html">2.스토리</a></li>
+                    <li><a href="./OLD_fdadd_03.html">3.리워드</a></li>
+                    <li><a href="./OLD_fdadd_04.html">4.안내사항</a></li>
+                    <li><a href="./OLD_fdadd_05.html">5.진행자/부가정보</a></li>
+                </ul>
+            </div>
+            
+            <div class="main-content">
+                <label class="caption">프로젝트 제목을 적어주세요</label>
+                <p class="info-text">프로젝트의 핵심 내용을 담을 수 있고 간결한 제목을 정해주세요.</p>
+                <div class="title-container">
+                    <input type="text" id="titlefield" maxlength="40" placeholder="">
+                    <span class="char-count" id="title-count">0/40</span>
+                </div>
+                <!-- 목표금액 -->
+                <label class="caption">목표 금액을 적어주세요</label>
+                <p class="info-text">최소 1,000,000원 이상이여야 합니다.</p>
+                <input type="number" placeholder=""><span class="info-text">원</span><br><br>
+
+                <label class="caption">프로젝트의 진행 기간을 적어주세요</label>
+                <p class="info-text">최소 7일부터 최대 60일 까지 가능합니다.</p>
+                <div class="date-container">
+                    <div class="date-left">
+                      <input type="text" id="days-left" readonly>
+                      <span>일 남음</span>
+                    </div>
+                    <input type="date" id="end-date">
+                </div>
+
+                <label class="caption">프로젝트의 고유 주소를 적어주세요</label>
+                <p class="info-text">프로젝트와 관련된 키워드를 짧은 영어로 적어주세요. 특수문자와 띄어쓰기는 불가합니다.</p>
+                <div class="url-container">
+                <span class="info-text">https://www.old.com/r/</span>
+                <input type="text" id="url-slug" placeholder="프로젝트명"><br><br>
+                </div>
+
+                <label class="caption">프로젝트의 대표 이미지를 등록해주세요</label>
+                <p class="info-text">홈페이지와 외부 공유를 했을 때 보여집니다. 프로젝트를 한 눈에 나타낼 수 있는 이미지로 등록해주세요.</p>
+                <label class="img-upload-label">
+                    <input type="file" id="image-upload" accept="image/*">
+                    <img id="image-preview" src="" alt="미리보기" class="preview-placeholder">
+                    <span class="upload-text">이미지 선택</span>
+                </label>
+
+                <label class="caption">프로젝트 키워드를 입력해주세요</label>
+                <p class="caution-text">*필수사항</p>
+                <p class="info-text">제목 외에도 키워드 검색 시 검색 결과에 프로젝트가 나타납니다</p>
+                <div class="checkbox-group">
+                    <span class="subcaption">연도별</span> <span class="caution-text">*필수사항(중복선택 가능)</span><br>
+                    <label class="checkbox-btn"><input type="checkbox" name="years" value="70s">#70년대</label>
+                    <label class="checkbox-btn"><input type="checkbox" name="years" value="80s">#80년대</label>
+                    <label class="checkbox-btn"><input type="checkbox" name="years" value="90s">#90년대</label>
+                    <label class="checkbox-btn"><input type="checkbox" name="years" value="00s">#00년대</label>
+                </div>
+    
+                <div class="checkbox-group">
+                    <span class="subcaption">장르별</span> <span class="caution-text">*필수사항(중복선택 가능)</span><br>
+                    <label class="checkbox-btn"><input type="checkbox" name="genre" value="game">#게임</label>
+                    <label class="checkbox-btn"><input type="checkbox" name="genre" value="food">#식품</label>
+                    <label class="checkbox-btn"><input type="checkbox" name="genre" value="music">#음악</label>
+                    <label class="checkbox-btn"><input type="checkbox" name="genre" value="etc">#기타</label>
+                </div>
+
+                <label class="caption">세부 키워드를 적어주세요 (선택)</label>
+                <p class="info-text">제목 외에도 키워드 검색 시 검색 결과에 프로젝트가 나타납니다</p>
+                <input type="text" placeholder="키워드 입력 후 엔터를 눌러주세요"><br><br>
+
+                <div class="bot-button">
+                    <button>저장하기</button>
+                    <button>다음단계</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- 푸터 영역 -->
+        <div data-include-path="../../../html/main/OLD_bottom_bar.html"></div>
+        <script src="../../../js/addEventListener.js"></script>
+        <script src="../../../js/funding/funding_setup/OLD_fdadd_01.js"></script>
+    </body>
+</html>

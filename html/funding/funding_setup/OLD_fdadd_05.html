@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>기본 폼</title>
+        <link rel="stylesheet" href="../../../css/main/OLD_main_menu.css">
+        <link rel="stylesheet" href="../../../css/main/OLD_bottom_bar.css">
+        <link rel="stylesheet" href="../../../css/funding/funding_setup/OLD_fdadd_05.css">
+    </head>
+    <body>
+        <div data-include-path="../../../html/main/OLD_main_menu.html"></div>
+        <!-- 헤더 영역 -->
+        <div class="container">
+            <div class="writing-order">
+                프로젝트 만들기 
+                <ul>
+                    <li><a href="./OLD_fdadd_01.html">1.기본정보</a></li>
+                    <li><a href="./OLD_fdadd_02.html">2.스토리</a></li>
+                    <li><a href="./OLD_fdadd_03.html">3.리워드</a></li>
+                    <li><a href="./OLD_fdadd_04.html">4.안내사항</a></li>
+                    <li><a href="./OLD_fdadd_05.html">5.진행자/부가정보</a></li>
+                </ul>
+            </div>
+
+          <div class="main-content">
+              <label class="caption">진행자 정보를 입력해주세요</label>
+              <p class="info-text">사업자등록증 이미지를 올려주세요 (개인일 경우 신분증 이미지)</p>
+              <input type="file" name="" id="">
+              <p class="info-text">사업자 주소를 선택해 주세요 (개인일 경우 신분증 상세주소)</p>
+              <div class="provider-address">
+                  <label for="sido">시/도:</label>
+                  <select id="sido" onchange="updateSigungu()">
+                      <option value="">시/도를 선택해주세요.</option>
+                  </select>
+                  <label for="sigungu">시/군/구:</label>
+                  <select id="sigungu">
+                      <option value="">시/군/구를 선택해주세요.</option>
+                  </select>
+              </div>
+              
+              <label class="caption">계좌 정보를 입력해주세요</label>
+              <p class="info-text">프로젝트 종료 후 정산 받을 계좌를 입력해주세요</p>
+              <select id="account">
+                  <option value="">은행</option>
+              </select>
+              <input type="text" placeholder="계좌 번호를 숫자만 입력해주세요.(-제외)"><br>
+              <p class="info-text">예금주명을 적어주세요</p>
+              <input type="text" placeholder="계좌에 등록한 예금주명과 일치해야 합니다."><br>
+              <p class="info-text">통장 사본 이미지를 올려주세요</p>
+              <input type="file" name="" id=""><br><br>
+
+              <div class="bot-button">
+                  <button>저장하기</button>
+                  <button>다음단계</button>
+              </div>
+          </div>
+            
+        </div>
+        <!-- 푸터 영역 -->
+        <div data-include-path="../../../html/main/OLD_bottom_bar.html"></div>
+        <script src="../../../js/addEventListener.js"></script>
+        <script src="../../../js/funding/funding_setup/OLD_fdadd_05.js"></script>
+    </body>
+</html>
