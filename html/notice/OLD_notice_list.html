@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>공지사항</title>
+        <link rel="stylesheet" href="../../css/main/OLD_main_menu.css">
+        <link rel="stylesheet" href="../../css/main/OLD_bottom_bar.css">
+        <link rel="stylesheet" href="../../css/notice/OLD_notice_list.css">
+    </head>
+    <body>
+        <script src="../../js/notice/OLD_notice_list.js"></script>
+        <div data-include-path="../../html/main/OLD_main_menu.html"></div>
+        <!-- 헤더 영역 -->
+        <div class="slide">
+            <button onclick="prevSlide()">←</button>
+            <span id="slideCount">1/5</span>
+            <img id="slideImg" src="../../images/main/sample2.jpg" alt="slide imagine">
+            <button onclick="nextSlide()">→</button>
+        </div>
+
+        <h2>공지사항</h2>
+        
+        <div class="tab">
+            <button id="tab1" class="active" onclick="connectTab('notice',this)">공지사항</button>
+            <button id="tab2" onclick="connectTab('event',this)">이벤트</button>
+        </div>
+
+        <div id="notice" class="tabContentActive">
+            <div class="noticeList">
+                <div class="noticeContent">
+                    <div>
+                        <span class="badge">공지</span>
+                        [공지] 강수로 인한 일부 지역 배송 지연 안내
+                    </div>
+                    <div>2025.02.02</div>
+                </div>
+                
+                <div class="noticeContent">
+                    <div>
+                        <span class="badge">공지</span>
+                        [공지] 개인정보처리방침 개정 안내
+                    </div>
+                    <div>2025.01.01</div>
+                </div>
+                
+                <div class="noticeContent">
+                    <div>[모집] 우리 동네 소상공인 크라우드 폼딩 모집</div>
+                    <div>2025.04.21</div>
+                </div>
+                
+                <div class="noticeContent">
+                    <div>[모집] 2025 추억의 관광여행 지원 기업 모집</div>
+                    <div>2025.04.21</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="event" class="tabContent">
+            <div class="noticeList">
+                    <div class="noticeContent"></div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>...</span>
+            <span>9</span>
+            <span>10</span>
+        </div>
+
+        <!-- 푸터 영역 -->
+        <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
+        <script src="../../js/addEventListener.js"></script>
+    </body>
+</html>
