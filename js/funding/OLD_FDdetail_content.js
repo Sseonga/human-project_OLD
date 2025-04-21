@@ -33,3 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+//후원하기 버튼 클릭시 리워드바로 이동
+('#donationBtn').click(() => {
+    document.getElementById(".rewardContent").scrollIntoView({
+        behavior: 'smooth'
+    });
+});

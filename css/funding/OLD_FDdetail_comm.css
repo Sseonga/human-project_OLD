@@ -262,7 +262,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     margin-left: 98px;
     background-color: gainsboro;
     position: relative;
-    z-index: -2;
+    z-index: 0;
 }
 .FD_projectCommunity .communityBox h2{
     padding-top: 30px;
@@ -389,6 +389,10 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     /* overflow: hidden; */
     /* transition: max-height 0.5s ease; */
   }
+  .commentList{
+    position: relative;
+    margin-top: 30px;
+  }
 .comment1{
     background-color: rgb(226, 226, 226);
     width:500px;
@@ -483,9 +487,8 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
 .commentForm i{
     color: white;
     font-size: 25px;
-    position: absolute;
-    top: 338px;
-    right: 70px;
+    position: relative;
+    top: 5px;
 }
 
 /* 리워드 박스 */
