@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>기본 폼</title>
+        <link rel="stylesheet" href="../../../css/main/OLD_main_menu.css">
+        <link rel="stylesheet" href="../../../css/main/OLD_bottom_bar.css">
+        <link rel="stylesheet" href="../../../css/funding/funding_setup/OLD_fdadd_03.css">
+    </head>
+    <body>
+        <div data-include-path="../../../html/main/OLD_main_menu.html"></div>
+        <!-- 헤더 영역 -->
+        <div class="container">
+            <div class="writing-order">
+                프로젝트 만들기 
+                <ul>
+                    <li><a href="./OLD_fdadd_01.html">1.기본정보</a></li>
+                    <li><a href="./OLD_fdadd_02.html">2.스토리</a></li>
+                    <li><a href="./OLD_fdadd_03.html">3.리워드</a></li>
+                    <li><a href="./OLD_fdadd_04.html">4.안내사항</a></li>
+                    <li><a href="./OLD_fdadd_05.html">5.진행자/부가정보</a></li>
+                </ul>
+            </div>
+            
+            <div class="main-content">
+                <label class="caption">프로젝트 리워드를 구성해주세요</label>
+                <p class="info-text">프로젝트 시작을 위해서는 최소 1개 이상의 리워드가 있어야 합니다.<br>
+                배송이 필요한 리워드는 배송비가 포함된 가격을 적어주세요.</p>
+
+                <fieldset>
+                    <div>
+                        <span>리워드 금액</span>
+                        <input type="text" placeholder="1,000원 이상 입력해 주세요.">
+                        <span class="info-text">원</span>
+                    </div>
+                    <div>
+                        <span>리워드 제공 가능수</span>
+                        <label><input type="radio" name="limit" value="">무제한</label>
+                        <label><input type="radio" name="limit" value="">제한</label>
+                    </div>
+                    <div>
+                        <span>리워드 제목</span>
+                        <input type="text">
+                        <span class="info-text">0/30</span>
+                    </div>
+                    <div>
+                        <span>리워드 내용</span>
+                        <textarea name="" id="" placeholder="리워드와 설명을 적어주세요."></textarea>
+                        <span class="info-text">0/70</span>
+                    </div>
+                    <div>
+                        <span>예상 배송일</span>
+                        <input type="date">
+                    </div>
+                    <!-- <div>
+                        <span>리워드 옵션</span>
+                        <input type="text" placeholder="1,000원 이상 입력해 주세요.">
+                        <span class="info-text">원</span>
+                    </div> -->
+                    <div>
+                        <span>배송지 필요여부</span>
+                        <label><input type="radio" name="needadress" value="">무제한</label>
+                        <label><input type="radio" name="needadress" value="">제한</label>
+                    </div>
+                    <button>등록</button>
+                    <button type="reset">초기화</button>
+                </fieldset>
+                <div>
+                    <p class="caption">리워드 미리보기</p>
+                    <div class="preview-list">
+                        <div class="preview-reward">
+                            <p class="prv-1">리워드 제목</p>
+                            <p class="prv-1">금액</p>
+                            <p class="prv-2">배송지 필요 여부</p>
+                            <p class="prv-2">예상 배송일</p>
+                        </div>
+                        <button>></button>
+                    </div>
+                </div>
+
+                <div class="bot-button">
+                    <button>저장하기</button>
+                    <button>다음단계</button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- 푸터 영역 -->
+        <div data-include-path="../../../html/main/OLD_bottom_bar.html"></div>
+        <script src="../../../js/addEventListener.js"></script>
+        <script src="../../../js/funding/funding_setup/OLD_fdadd_03.js"></script>
+    </body>
+</html>
