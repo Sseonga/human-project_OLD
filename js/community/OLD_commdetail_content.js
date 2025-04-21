@@ -61,35 +61,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const savedVote = localStorage.getItem(VOTE_KEY);
     let hasVoted = savedVote === "true";
 
-    // 문자열 숫자 → 정수
     function parseNumber(text) {
-      return parseInt(text.replace(/,/g, ""), 10);
+        return parseInt(text.replace(/,/g, ""), 10);
     }
 
-    // 정수 → 문자열 숫자(콤마 포함)
     function formatNumber(num) {
-      return num.toLocaleString("ko-KR");
+        return num.toLocaleString("ko-KR");
     }
 
-    // 초기 상태 세팅
     function updateVoteDisplay() {
-      let baseVote = 3200;
-      const voteCount = hasVoted ? baseVote + 1 : baseVote;
-      voteNumElement.textContent = formatNumber(voteCount) + "명";
+        const baseVote = 3200;
+        const voteCount = hasVoted ? baseVote + 1 : baseVote;
+        voteNumElement.textContent = formatNumber(voteCount) + "명";
+
+        // 버튼 텍스트도 같이 업데이트
+        voteBtn.textContent = hasVoted ? "투표 취소하기" : "투표하기";
     }
 
-    updateVoteDisplay(); // 페이지 로드시 반영
+    updateVoteDisplay(); // 초기 상태 적용
 
     voteBtn.addEventListener("click", () => {
-      hasVoted = !hasVoted;
-
-      // localStorage에 반영
-      localStorage.setItem(VOTE_KEY, hasVoted.toString());
-
-      // 숫자 갱신
-      updateVoteDisplay();
-
-      // 알림
-      alert(hasVoted ? "투표했습니다." : "투표를 취소했습니다.");
+        hasVoted = !hasVoted;
+        localStorage.setItem(VOTE_KEY, hasVoted.toString());
+        updateVoteDisplay();
+        alert(hasVoted ? "투표했습니다." : "투표를 취소했습니다.");
     });
-  });
+});
