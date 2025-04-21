@@ -65,7 +65,7 @@ $(this).parent().remove()
             }
         });
 
-        //댓글창 껐다키기
+        //댓글창 껐다키기ㅠㅠㅠㅠㅠㅠ
         $(document).on('click','#commBtn',function(){
             $('#FD_commentBox').slideToggle(400);
         });
