@@ -143,47 +143,52 @@
         </section>
         <section class="FD_rewardBar">
             <div class="rewardBar">
-                <h2>리워드 선택</h2>
-                <div class="rewardContent">
-                        <h2>1,000,000원</h2>
-                        <h3>스페셜 에디션</h3>
-                        <ul>
-                            <li>카트리지 8비트 가정용 패미콤</li>
-                            <li>CPU 리코 2A03 1.79 MHz</li>
-                            <li>사각파 채널 사운드칩 3종</li>
-                            <li>탈착식 뉴 패미콤 컨트롤러(커스텀 가능)</li>
-                            <li>전원 어댑터</li>
-                            <li>패미콤 10종 게임 디스크</li>
-                            <li>현대 컴보이 전자총</li>
-                        </ul>    
+                <div class="rewardBar" id="rewardBar">
+                    <h2>리워드 선택</h2>
+                        <div class="rewardContent">
+                            <input type="radio" name="Edition" class="edition">
+                            <h2>1,000,000원</h2>
+                            <h3>스페셜 에디션</h3>
+                            <ul>
+                                <li>카트리지 8비트 가정용 패미콤</li>
+                                <li>CPU 리코 2A03 1.79 MHz</li>
+                                <li>사각파 채널 사운드칩 3종</li>
+                                <li>탈착식 뉴 패미콤 컨트롤러(커스텀 가능)</li>
+                                <li>전원 어댑터</li>
+                                <li>패미콤 10종 게임 디스크</li>
+                            </ul>    
+                        </div>
+                    <div class="rewardContent">
+                        <input type="radio" name="Edition" class="edition">
+                            <h2>300,000원</h2>
+                            <h3>디지털 에디션</h3>
+                            <ul>
+                                <li>카트리지 8비트 가정용 패미콤</li>
+                                <li>CPU 리코 2A03 1.79 MHz</li>
+                                <li>탈착식 뉴 패미콤 컨트롤러</li>
+                                <li>전원 어댑터</li>
+                                <li>패미콤 7종 게임 디스크</li>
+                            </ul>    
+                    </div>
+                    <div class="rewardContent">
+                        <input type="radio" name="Edition" class="edition">
+                            <h2>100,000원</h2>
+                            <h3>스탠다드 에디션</h3>
+                            <ul>
+                                <li>카트리지 8비트 가정용 패미콤</li>
+                                <li>CPU 리코 2A03 1.79 MHz</li>
+                                <li>패미콤 컨트롤러</li>
+                                <li>패미콤 3종 게임 디스크</li>
+                            </ul>        
+                    </div>
                 </div>
-                <div class="rewardContent">
-                        <h2>300,000원</h2>
-                        <h3>디지털 에디션</h3>
-                        <ul>
-                            <li>카트리지 8비트 가정용 패미콤</li>
-                            <li>CPU 리코 2A03 1.79 MHz</li>
-                            <li>탈착식 뉴 패미콤 컨트롤러</li>
-                            <li>전원 어댑터</li>
-                            <li>패미콤 7종 게임 디스크</li>
-                        </ul>    
-                </div>
-                <div class="rewardContent">
-                        <h2>100,000원</h2>
-                        <h3>스탠다드 에디션</h3>
-                        <ul>
-                            <li>카트리지 8비트 가정용 패미콤</li>
-                            <li>CPU 리코 2A03 1.79 MHz</li>
-                            <li>패미콤 컨트롤러</li>
-                            <li>패미콤 3종 게임 디스크</li>
-                        </ul>    
-                </div>
-            </div>
             <div class="FD_reward_button">
                 <button class="donation">후원하기</button>
                 <button class="share"><i class="fa-solid fa-share-nodes"></i></button>
             </div>
         </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../../js/funding/OLD_FDdetail_update.js"></script>
         <!-- 푸터 영역 -->
         <div data-include-path="../../html/main/OLD_bottom_bar.html"></div>
         <script src="../../js/addEventListener.js"></script>

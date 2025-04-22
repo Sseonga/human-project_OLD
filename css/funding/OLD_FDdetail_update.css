@@ -416,3 +416,12 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     right: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.edition{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.edition:checked ~ .rewardInfo, .rewardContent:has(input.edition:checked){
+    background-color: #777;
+    color: white;
+}

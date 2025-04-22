@@ -43,3 +43,17 @@ $(document).on('click','#heartBtn',function(){
 $(document).on('click','#commBtn',function(){
     $('#comm_commentBox').slideToggle(400);
 });
+
+//메인 디테일 이미지 전환
+document.addEventListener('DOMContentLoaded', () => {
+    const mainImage = document.querySelector('.comm_detail_mainImage img');
+    const imageList = document.querySelectorAll('.comm_detail_images img');
+    const changeBtn = document.querySelector('.comm_detail_button');
+
+    let currentIndex = 0;
+
+    changeBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % imageList.length;
+      mainImage.src = imageList[currentIndex].src;
+    });
+  });
