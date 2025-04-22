@@ -1,5 +1,6 @@
 function cancel() {
     alert('이전 페이지로 돌아갑니다.');
+    window.close();
 }
 
 function submit() {

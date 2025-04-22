@@ -1,3 +1,6 @@
+function openPopup() {
+    window.open('../report/OLD_report_popup.html','popupWindow','width=500, height=600');
+}
 // 댓글 작성
 $(document).ready(() => {
     $('#send_button2').click(()=>{
@@ -70,5 +73,26 @@ document.addEventListener('DOMContentLoaded', () => {
           radio.dispatchEvent(new Event('change')); 
         }
       });
+    });
+  });
+  //링크 복사하기
+// input 태그 선택자로 선택
+window.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('urlBtn');
+    const input = document.getElementById('copyValue');
+  
+    button.addEventListener('click', function () {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(input.value)
+          .then(() => {
+            alert('복사되었습니다.');
+          })
+          .catch(err => {
+            alert('복사 실패: ' + err);
+            console.error(err);
+          });
+      } else {
+        alert('클립보드 API를 사용할 수 없습니다. HTTPS 환경에서 실행해주세요.');
+      }
     });
   });

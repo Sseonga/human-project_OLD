@@ -130,25 +130,31 @@ button.exit-btn:hover {
 
 }
 .pagenavi{
-    padding-top:25px;
     text-align: center;
+    margin: 40px 0;
+    padding-top: 25px;
 }
 
 .pagenavi a{
-    text-decoration:none;
-    border: 1px solid #ccc;
+    display: inline-block;
+    text-decoration: none;
     margin: 0 4px;
-    padding: 4px 8px;
-    margin-right: 4px;
-    font-size:14px;
-    color: black;
-    border-radius:5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #666;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.pagenavi a:hover {
+    background-color: #f5f5f5;
+    color: #2c1810;
 }
 
 a.nowpg {
-    background-color: black;
-    color:white;
-    }
+    background-color: #2c1810;
+    color: white;
+}
 
 li a{
     text-decoration:none;

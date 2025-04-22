@@ -66,8 +66,8 @@
                             <div class="shareBody">
                                 <h1>프로젝트 공유하기</h1>
                                 <div class="share_url">
-                                    <p>https://ourlostday.com</p>
-                                    <button id="urlbtn">URL 복사</button>
+                                    <input type="text" id="copyValue" value="https://ourlostday.com" readonly></input>
+                                    <button id="urlBtn">URL 복사</button>
                                 </div>
                                 <hr class="divider" style="width: 400px;">
                                 <span id="closeBtn">확인</span>
@@ -88,7 +88,7 @@
         <section class="comm_reportButton">
             <div>
                 <p>프로젝트에 문제가 있나요?</p>
-                <button id="reportBtn">신고하기 > </button>
+                <button id="reportBtn" onclick="openPopup()">신고하기 > </button>
             </div>
         </section>
         <section class="comm_projectCommunity">
