@@ -89,7 +89,7 @@ section .comm_right_mainDetail .comm_right_form h4{
 section .comm_right_mainDetail .comm_right_form .comm_right_description{
     height: 100px;
     border-radius: 10px;
-    background-color: white;
+    background-color: gainsboro;
     width: 280px;
     margin: 0 auto;
     padding-left: 10px;
