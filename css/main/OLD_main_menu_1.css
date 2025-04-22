@@ -265,3 +265,21 @@ header{
 .alarm-link:active {
     color: inherit;
 } 
+
+/* 관리자 마크 */
+.admin-mark {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #000000; 
+    border: 1.5px solid #000000;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .admin-mark:hover {
+    background-color: #e76f51;
+  }
