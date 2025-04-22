@@ -140,16 +140,27 @@
                         <h3>나는 에그몽 안에 들어있던 초콜릿에는 관심 없고 피규어에만 관심 있었는데 만약에 펀딩 된다고 하면 피규어만 따로 구매하는 패키지 있으면 좋지 않을까?</h3>
                         <div class="comm_interBox_vote">
                             <h2>에그몽 피규어만 파는 패키지 나오면 산다 안산다</h2>
-                            <div class="vote1">
+                            <div class="voteBox">
                                 <h3>산다</h3>
-                                <input type="checkbox">    
+                                <input type="radio" name="vote" class="voteCheck1">    
                             </div>
-                            <div class="vote2">
+                            <div class="voteBox">
                                 <h3>안산다</h3>
-                                <input type="checkbox">    
+                                <input type="radio" name="vote" class="voteCheck2">    
                             </div>
-                            <button type="submit" class="vote_end">투표하기</button>
+                            <button type="submit" class="vote_end" id="vote_end">투표하기</button>
                             <p>2025/03/30 12:00 ~ 2025/04/10 12:00</p>
+                        </div>
+                        <div class="comm_interBox_voteResult" id="voteResult">
+                            <h2>에그몽 피규어만 파는 패키지 나오면 산다 안산다</h2>
+                            <div class="voteResult_line"></div>
+                            <div class="voteResult_bar1">
+                                <h3>산다 63%</h3>
+                            </div>
+                            <div class="voteResult_bar2">
+                                <h3>안산다 37%</h3>
+                            </div>
+                            <button class="voteReturnBtn" id="returnBtn">투표 창으로 돌아가기</button>
                         </div>
                     </div>
                     <div class="btn_box">
@@ -199,6 +210,7 @@
             </div>
             
         </section>
+        <script src="../../js/community/voteResult.js"></script>
         <script src="../../js/community/OLD_commdetail_content.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- 푸터 영역 -->

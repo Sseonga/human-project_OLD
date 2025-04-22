@@ -501,7 +501,7 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
     padding-top: 15px;
     color: #2c1810;
 }
-.vote1{
+.voteBox{
     height: 60px;
     width: 600px;
     background-color: white;
@@ -509,31 +509,42 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
     margin-bottom: 30px;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.vote2{
-    height: 60px;
-    width: 600px;
-    background-color: white;
-    margin: 0 auto;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 .comm_interBox_vote h3{
-    margin-left: 50px;
     padding-top: 15px;
+    font-size: 20px;
 }
 .comm_interBox_vote input{
     width: 20px;
     height: 20px;
     margin-left: 520px;
 }
-.vote1 input{
+.voteCheck1{
     position: absolute;
     top: 333px;
+    opacity: 0;
+    pointer-events: none;
 }
-.vote2 input{
+.voteCheck2{
     position: absolute;
-    top: 413px;
+    top: 410px;
+    opacity: 0;
+    pointer-events: none;
+}
+.voteBox:hover{
+    color: #2f4136;
+}
+.voteCheck1:checked ~ .voteBox, .voteBox:has(input.voteCheck1:checked){
+    background-color: #34915b;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.voteCheck2:checked ~ .voteBox, .voteBox:has(input.voteCheck2:checked){
+    background-color: #34915b;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
 }
 .comm_interBox_vote button{
     background-color: #2c1810;
@@ -550,6 +561,94 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
 .comm_interBox_vote p{
     margin-left: 500px;
     margin-top: 80px;
+}
+/* 투표 결과창 */
+.comm_interBox_voteResult{
+    background-color: #999393;
+    width: 800px;
+    height: 280px;
+    margin: 0 auto;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: -291px;
+    display: none;
+}
+.comm_interBox_voteResult h2{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 15px;
+    color: #2c1810;
+}
+.voteResult_line{
+    position: absolute;
+    width: 3px;
+    height: 160px;
+    left: 150px;
+    background-color: #2c1810;
+    z-index: 1;
+}
+.voteResult_bar1{
+    background-color: #34915b;
+    width: 410px;
+    position: absolute;
+    left: 150px;
+    text-align: right;
+    top: 90px;
+    height: 55px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation-name: vote1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes vote1{
+    0%{width: 0px;}
+    100%{width: 410px;}
+}
+.voteResult_bar2{
+    background-color: #2f4136;
+    width: 200px;
+    position: absolute;
+    left: 150px;
+    top: 160px;
+    height: 55px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation-name: vote2;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes vote2{
+    0%{width: 0px;}
+    100%{width: 200px;}
+}
+.voteResult_bar1 h3, .voteResult_bar2 h3{
+    line-height: 75px;
+    white-space: nowrap;
+}
+.voteReturnBtn{
+    position: absolute;
+    left: 550px;
+    top: 220px;
+    height: 40px;
+    width: 180px;
+    font-size: 15px;
+    background-color: #535353;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 /* 커뮤니티 댓글창 */
 #comm_commentBox{

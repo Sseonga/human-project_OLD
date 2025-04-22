@@ -57,3 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
       mainImage.src = imageList[currentIndex].src;
     });
   });
+
+  //커뮤니티 투표창 체크박스 전환
+  document.addEventListener('DOMContentLoaded', function () {
+    const voteBoxes = document.querySelectorAll('.voteBox');
+  
+    voteBoxes.forEach(box => {
+      box.addEventListener('click', function (e) {
+        const radio = box.querySelector('input[type="radio"]');
+        if (radio) {
+          radio.checked = true;
+          radio.dispatchEvent(new Event('change')); 
+        }
+      });
+    });
+  });
