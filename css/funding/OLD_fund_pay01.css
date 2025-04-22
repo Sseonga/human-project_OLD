@@ -173,10 +173,12 @@
   display: flex;
   gap: 10px;
 }
-.card-info div input {
+.card-info div {
   flex: 1;
-  width: 0 auto;
   min-width: 0;
+}
+.card-info div input {
+  width: 90%;
 }
 
 .submit-btn {
