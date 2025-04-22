@@ -116,6 +116,10 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
     color: white;
     border-radius: 20px;
 }
+.comm_right_hashtag button:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+}
 .comm_right_heart{
     display: flex;
     margin-left: 30px;
