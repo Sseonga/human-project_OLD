@@ -121,28 +121,22 @@ header{
 }
 
 .alarm-content {
-    padding: 20px;
-    text-align: center;
-}
-
-.no-alarm-message {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+    padding: 0 15px;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 .bell-icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .main-text {
-    margin: 0;
+    font-size: 14px;
     color: #333;
-    font-size: 18px;
-    font-weight: bold;
+    margin: 0;
+    line-height: 1.4;
 }
 
 .sub-text {
@@ -225,4 +219,49 @@ header{
 }
 .mypage-menu {
     padding: 8px 0;
+}
+
+/* 알람 드롭다운 스타일 추가 */
+.alarm-item {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.alarm-item:hover {
+    background-color: #f5f5f5;
+}
+
+.alarm-icon {
+    margin-right: 12px;
+}
+
+.alarm-text {
+    flex: 1;
+}
+
+.alarm-message {
+    padding: 10px;
+}
+
+.alarm-time {
+    font-size: 12px;
+    color: #888;
+    margin-top: 3px;
+}
+
+/* 알람 링크 스타일 */
+.alarm-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.alarm-link:hover,
+.alarm-link:visited,
+.alarm-link:active {
+    color: inherit;
 } 
