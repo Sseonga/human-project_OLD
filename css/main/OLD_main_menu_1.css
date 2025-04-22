@@ -59,7 +59,7 @@ header{
 }
 
 .header_text a{
-    color:white;
+    color:white !important;
     font-weight:bold;
     cursor: pointer;
     text-decoration: none;

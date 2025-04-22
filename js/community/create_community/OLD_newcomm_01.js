@@ -11,7 +11,7 @@ document.querySelectorAll('.checkbox-btn input').forEach((checkbox) => {
   });
 });
 
-// 제목 글자수 제한
+// 제목 글자수 표시
 const titleField = document.getElementById('titlefield');
 const titleCount = document.getElementById('title-count');
 
@@ -37,14 +37,13 @@ const timeDiff = endDate - today;
 const dayDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
 
 if (dayDiff < 7 || dayDiff > 60) {
-    daysLeftInput.value = "⛔";
     alert("진행 기간은 7일 이상 60일 이하로 설정해주세요.");
 } else {
     daysLeftInput.value = dayDiff;
 }
 });
 
-// 프로젝트명 영어제한  
+// 프로젝트주소 영어제한  
 const urlInput = document.getElementById('url-slug');
 
 urlInput.addEventListener('input', () => {

@@ -37,7 +37,6 @@ const timeDiff = endDate - today;
 const dayDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
 
 if (dayDiff < 7 || dayDiff > 60) {
-    daysLeftInput.value = "⛔";
     alert("진행 기간은 7일 이상 60일 이하로 설정해주세요.");
 } else {
     daysLeftInput.value = dayDiff;
@@ -48,7 +47,7 @@ if (dayDiff < 7 || dayDiff > 60) {
     const urlInput = document.getElementById('url-slug');
 
     urlInput.addEventListener('input', () => {
-    urlInput.value = urlInput.value.replace(/[^a-zA-Z]/g, '');
+    urlInput.value = urlInput.value.replace(/[^a-zA-Z0-9]/g, '');
     });
 
 // 대표이미지 미리보기
