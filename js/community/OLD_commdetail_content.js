@@ -1,3 +1,6 @@
+function openPopup() {
+    window.open('../report/OLD_report_popup.html','popupWindow','width=500, height=600');
+}
 //하트기능
 document.addEventListener('DOMContentLoaded', function () {
     const heartBtn = document.querySelector('.comm_right_heart');

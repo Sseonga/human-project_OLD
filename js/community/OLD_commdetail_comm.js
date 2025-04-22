@@ -1,3 +1,6 @@
+function openPopup() {
+    window.open('../report/OLD_report_popup.html','popupWindow','width=500, height=600');
+}
 // 댓글 작성
 $(document).ready(() => {
     $('#send_button2').click(()=>{
