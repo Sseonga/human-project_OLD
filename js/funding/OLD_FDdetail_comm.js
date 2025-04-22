@@ -65,7 +65,22 @@ $(this).parent().remove()
             }
         });
 
-        //댓글창 껐다키기ㅠㅠㅠㅠㅠㅠ
+        //댓글창 껐다키기
         $(document).on('click','#commBtn',function(){
             $('#FD_commentBox').slideToggle(400);
         });
+
+        //리워드 선택
+        document.addEventListener('DOMContentLoaded', function () {
+            const rewardBoxes = document.querySelectorAll('.rewardContent');
+          
+            rewardBoxes.forEach(box => {
+              box.addEventListener('click', function (e) {
+                const radio = box.querySelector('input[type="radio"]');
+                if (radio) {
+                  radio.checked = true;
+                  radio.dispatchEvent(new Event('change')); 
+                }
+              });
+            });
+          });

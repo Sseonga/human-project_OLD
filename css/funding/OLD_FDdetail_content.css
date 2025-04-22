@@ -121,9 +121,12 @@ section .FD_right_mainDetail{
     height: 700px;
     width: 378px;
 }
+.targetAmount{
+    color: #34915b;
+}
 section .FD_right_mainDetail .FD_right_form h2{
     font-size: 40px;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 section .FD_right_mainDetail .FD_right_form h3{
     font-size: 30px;
@@ -414,6 +417,9 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
 }
 .FD_detailBar .detailBar_introduce:hover, .detailBar_community:hover, .detailBar_refund:hover, .detailBar_update:hover{
     background-color: rgb(104, 104, 104);
+}
+.FD_detailBar h2{
+    margin-top: 20px;
 }
 
 /* 펀딩 프로젝트 소개칸 */
