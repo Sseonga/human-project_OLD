@@ -14,7 +14,7 @@ section .comm_left_mainDetail{
     width: 700px;
     height: 700px;
     position: absolute;
-    left: 110px;
+    left: 130px;
 }
 .comm_detail_title{
     background-color: white;
