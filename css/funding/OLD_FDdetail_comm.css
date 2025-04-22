@@ -3,9 +3,11 @@
 #FD_mainDetail{
     width: 1200px;
     height: 700px;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
     margin-left: 103px;
     margin-top: 60px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
 }
 section .FD_left_mainDetail{
     width: 700px;
@@ -14,20 +16,25 @@ section .FD_left_mainDetail{
     left: 130px;
 }
 .FD_detail_title{
-    background-color: white;
+    background-color: #ffffff;
     width: 700px;
+    height: 70px;
+    line-height: 70px;
     font-size: 25px;
     text-align: center;
     margin-top: -15px;
-    margin-bottom: -20px;
-   
+    margin-bottom: -10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 section .FD_left_mainDetail .FD_detail_mainImage img{
-    height: 480px;
+    height: 450px;
     width: 700px;
     background-size: auto;
     background-position: 100%;
     position: relative;
+    margin-top: 30px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
 section .FD_left_mainDetail .FD_detail_mainImage button{
     position: absolute;
@@ -46,6 +53,7 @@ section .FD_left_mainDetail .FD_detail_images img{
     justify-content: flex-start;
     margin-right: 15px;
     margin-top: 15px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
 /* FD_detail right form */
 section .FD_right_mainDetail{
@@ -54,9 +62,12 @@ section .FD_right_mainDetail{
     height: 700px;
     width: 378px;
 }
+.targetAmount{
+    color: #34915b;
+}
 section .FD_right_mainDetail .FD_right_form h2{
     font-size: 40px;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 section .FD_right_mainDetail .FD_right_form h3{
     font-size: 30px;
@@ -70,7 +81,7 @@ section .FD_right_mainDetail .FD_right_form h4{
 section .FD_right_mainDetail .FD_right_form .FD_right_description{
     height: 100px;
     border-radius: 10px;
-    background-color: white;
+    background-color: gainsboro;
     width: 280px;
     margin: 0 auto;
     padding-left: 10px;
