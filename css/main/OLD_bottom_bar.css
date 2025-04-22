@@ -86,3 +86,12 @@ address {
     color: #707070;
 }
 
+.notice-bar a span{
+    color:white;
+    text-decoration: none;
+
+}
+
+.notice-bar a span:hover{
+    color:red;
+}
