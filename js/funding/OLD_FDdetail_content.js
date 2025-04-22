@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-//후원하기 버튼 클릭시 리워드바로 이동(안됨 수정해야함)
+//후원하기 버튼 클릭시 리워드바로 이동
 document.addEventListener('DOMContentLoaded',function(){
     const startScroll = document.getElementById('donationBtn');
     const finishScroll = document.getElementById('rewardBar');
