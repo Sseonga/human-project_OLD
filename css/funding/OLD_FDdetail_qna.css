@@ -125,7 +125,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     height: 100px;
     z-index: 15;
 }
-.FD_right_bottomForm #donationBtn{
+.FD_right_bottomForm .donationBtn{
     font-size: 35px;
     font-weight: bold;
     width: 250px;
@@ -135,7 +135,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     margin-left: 45px;
     border-radius: 5%;
 }
-.FD_right_bottomForm #shareBtn{
+.FD_right_bottomForm .shareBtn{
     margin-left: 10px;
     font-size: 35px;
     text-align: center;
@@ -146,7 +146,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
 
 #shareModal{
     position: fixed;
-    z-index: 1;
+    z-index: 101;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -161,8 +161,8 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     height: 150px;
     padding: 30px 30px;
     position: absolute;
-    top: 500px;
-    left: 800px;
+    top: 50%;
+    left: 50%;
     margin: 0 auto;
     border: 1px solid #777;
     background-color: white;
@@ -330,7 +330,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     background-color: gainsboro;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.FD_reward_button #donationBtn{
+.FD_reward_button .donationBtn{
     font-size: 35px;
     font-weight: bold;
     width: 250px;
@@ -343,7 +343,7 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     top: 1100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.FD_reward_button #shareBtn{
+.FD_reward_button .shareBtn{
     margin-left: 10px;
     font-size: 35px;
     text-align: center;
