@@ -114,11 +114,14 @@ section .FD_left_mainDetail .FD_detail_mainImage button{
 section .FD_left_mainDetail .FD_detail_images :nth-child(1){
     margin-left: 20px;
 }
+.FD_detail_images{
+    width: 750px;
+    margin-left: -20px;
+}
 section .FD_left_mainDetail .FD_detail_images img{
     width: 150px;
     height: 100px;
-    justify-content: flex-start;
-    margin-right: 15px;
+    margin-right: 28px;
     margin-top: 15px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
