@@ -11,22 +11,7 @@
         <link rel="stylesheet" href="../../css/main/OLD_bottom_bar.css">
     </head>
     <body>
-        
-        <header>
-            <div class = "logo-box">
-                <!-- 250417 이성하 로고 클릭시 메인페이지 링크 추가 -->
-                <a href="/html/main/OLD_main_page.html">
-                    <img src="/images/main/image-removebg-preview.png" alt="로고" class="logo-images">
-                </a>
-            </div>
-            <div class = "header_text">
-                <a href="../auth/OLD_login.html" class="head_pund">펀딩</a>
-                <a href="../community/OLD_comm_list_game.html" class="head_comu">커뮤니티</a>
-                <a class="head_login" href="../auth/OLD_login.html">로그인</a>
-                <a href="../auth/OLD_login.html"><button>프로젝트 만들기</button></a>
-            </div>
-        </header>
-        <div class="blank"></div>
+        <div data-include-path="../../html/main/OLD_main_menu_1.html"></div>
         <!-- 헤더 영역 -->
         <section id="comm_mainDetail" class="comm_mainDetail">
             <div>
@@ -92,12 +77,12 @@
                 </div>
             </div>
         </section>
-        <section class="comm_detailBar">
-            <div class="detailBar_introduce">
-                <a href="OLD_commdetail_content.html" target="_parent"><h2>프로젝트 소개</h2></a>
+        <section class="comm_detailBar" id="detailBar_introduce">
+            <div class="detailBar_introduce" >
+                <a href="OLD_commdetail_content.html#detailBar_introduce" target="_parent"><h2>프로젝트 소개</h2></a>
             </div>
-            <div class="detailBar_community">
-                <a href="OLD_commdetail_comm.html" target="_parent"><h2>커뮤니티</h2></a>
+            <div class="detailBar_community" >
+                <a href="OLD_commdetail_comm.html#detailBar_community" target="_parent"><h2>커뮤니티</h2></a>
             </div>
         </section>
         <section class="comm_reportButton">
