@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
             // 이미지 경로 수정 (절대 경로 → 상대 경로)
-            let modifiedData = data.replace('/images/main/image-removebg-preview.png', '../../images/main/image-removebg-preview.png');
+            let modifiedData = data.replace('../../images/main/image-removebg-preview.png', '../../images/main/image-removebg-preview.png');
             
             // 로고 링크 경로 수정
             modifiedData = modifiedData.replace('href="../main/OLD_main_page1.html"', 'href="../../html/main/OLD_main_page1.html"');
