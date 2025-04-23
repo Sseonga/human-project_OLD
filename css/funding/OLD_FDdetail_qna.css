@@ -255,6 +255,18 @@ section .FD_right_mainDetail .FD_right_form .FD_right_hashtag{
     margin-top: 60px;
     
 }
+#detailBar_community{
+    scroll-margin-top: 300px;
+}
+#detailBar_introduce{
+    scroll-margin-top: 300px;
+}
+#detailBar_update{
+    scroll-margin-top: 300px;
+}
+#detailBar_refund{
+    scroll-margin-top: 300px;
+}
 .FD_detailBar div{
     border: 1px solid black;
     width: 300px;
