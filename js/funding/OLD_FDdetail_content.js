@@ -48,17 +48,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-//후원하기 버튼 클릭시 리워드바로 이동
-document.addEventListener('DOMContentLoaded',function(){
-    const startScroll = document.getElementById('donationBtn');
-    const finishScroll = document.getElementById('rewardBar');
+// //후원하기 버튼 클릭시 리워드바로 이동
+// // 리워드 선택시 결제모달창
+// document.addEventListener('DOMContentLoaded',function(){
+//     const startScroll = document.querySelectorAll(".donationBtn");
+//     const finishScroll = document.getElementById('rewardBar');
+//     const rewardBoxes = document.querySelectorAll('.rewardContent input[type="radio"]');
 
-    startScroll.addEventListener('click',function(){
-        if(finishScroll){
-            finishScroll/this.scrollIntoView({behavior: 'smooth'});
-        }
-    });
-});
+//     startScroll.forEach((btn) => {
+//       btn.addEventListener('click', (e) => {
+//         const isAnySelected = Array.from(rewardBoxes).some(radio => radio.checked);
+
+//         if (!isAnySelected) {
+//           finishScroll.scrollIntoView({ behavior: 'smooth' });
+//         } else {
+//           modal.classList.toggle('show');
+//         }
+
+
+//       })
+//     })
+    
+// });
 
 //링크 복사하기
 // input 태그 선택자로 선택
@@ -85,32 +96,3 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-//리워드 선택 후 결제창 연동
-// 리워드 선택
-document.addEventListener('DOMContentLoaded', function () {
-    const rewardBoxes = document.querySelectorAll('.rewardContent');
-  
-    rewardBoxes.forEach(box => {
-      box.addEventListener('click', function (e) {
-        const radio = box.querySelector('input[type="radio"]');
-        if (radio) {
-          radio.checked = true;
-          radio.dispatchEvent(new Event('change')); 
-        }
-      });
-    });
-  });
-
-//   결제창 연동
-// document.addEventListener('DOMContentLoaded',function(){
-//     const modalContainer = document.getElementById('donationModal');
-//     const donationBtn = document.getElementById('donationBtn2');
-
-//     fetch('OLD_fund_pay01.html')
-//     .then(response => response.text())
-//     .then(data => {
-//         modalContainer.innerHTML = data;
-
-//         const modal = document.getElementById 아 못하겠다
-//     })
-// })

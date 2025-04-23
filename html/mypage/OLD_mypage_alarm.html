@@ -131,59 +131,60 @@
             </div>
         </div>
         <div class="pagenavi">
-            <a href="#">< Previous</a>
+            <a href="#">&lt; 이전</a>
             <a href="#" class="nowpg">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a> ... </a>
             <a href="#">10</a>
             <a href="#">11</a>
-            <a href="#">Next ></a>
+            <a href="#">다음 &gt;</a>
         </div>
         
         <script src="../../js/addEventListener.js"></script>
         <script src="../../js/mypage/OLD_mypage_alarm.js"></script>
         <script>
-            // 저장할 위치 변수
-            var savedPosition = 0;
-            var isBookmarked = false;
-            
             // 페이지 로드 완료 후 실행
             document.addEventListener('DOMContentLoaded', function() {
-                // 모든 북마크 아이콘에 클릭 이벤트 추가
+                // 각 북마크 아이콘에 클릭 이벤트 추가
                 var icons = document.querySelectorAll('.bookmark-icon');
-                icons.forEach(function(icon) {
+                var bookmarkStates = {};
+                
+                icons.forEach(function(icon, index) {
+                    // 각 아이콘에 ID 할당
+                    icon.id = 'bookmark-' + index;
+                    // 상태 저장 객체 초기화
+                    bookmarkStates[icon.id] = {
+                        active: false,
+                        position: 0
+                    };
+                    
+                    // 클릭 이벤트 리스너 추가
                     icon.addEventListener('click', function(e) {
                         e.stopPropagation();
                         
-                        // 토글 상태 확인
-                        if (!isBookmarked) {
-                            // 현재 위치 저장하고 맨 위로 이동
-                            savedPosition = window.pageYOffset;
-                            
-                            // 모든 아이콘 초기화
-                            icons.forEach(function(i) {
-                                i.textContent = 'bookmark_border';
-                                i.classList.remove('bookmark-active');
-                            });
-                            
-                            // 현재 아이콘만 활성화
+                        var bookmarkId = this.id;
+                        var state = bookmarkStates[bookmarkId];
+                        
+                        if (!state.active) {
+                            // 현재 위치 저장하고 북마크 활성화
+                            state.position = window.pageYOffset;
                             this.textContent = 'bookmark';
                             this.classList.add('bookmark-active');
                             
                             // 맨 위로 스크롤
                             window.scrollTo(0, 0);
                             
-                            isBookmarked = true;
+                            state.active = true;
                         } else {
-                            // 원래 상태로 되돌리기
+                            // 북마크 비활성화
                             this.textContent = 'bookmark_border';
                             this.classList.remove('bookmark-active');
                             
-                            // 저장 위치로 스크롤
-                            window.scrollTo(0, savedPosition);
+                            // 저장된 위치로 스크롤
+                            window.scrollTo(0, state.position);
                             
-                            isBookmarked = false;
+                            state.active = false;
                         }
                     });
                 });

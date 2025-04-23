@@ -84,17 +84,17 @@ $(this).parent().remove()
               });
             });
           });
-//후원하기 버튼 클릭시 리워드바로 이동
-document.addEventListener('DOMContentLoaded',function(){
-    const startScroll = document.getElementById('donationBtn');
-    const finishScroll = document.getElementById('rewardBar');
+// //후원하기 버튼 클릭시 리워드바로 이동
+// document.addEventListener('DOMContentLoaded',function(){
+//     const startScroll = document.getElementById('donationBtn');
+//     const finishScroll = document.getElementById('rewardBar');
 
-    startScroll.addEventListener('click',function(){
-        if(finishScroll){
-            finishScroll/this.scrollIntoView({behavior: 'smooth'});
-        }
-    });
-});
+//     startScroll.addEventListener('click',function(){
+//         if(finishScroll){
+//             finishScroll/this.scrollIntoView({behavior: 'smooth'});
+//         }
+//     });
+// });
 //FD_mainDetial 이미지 슬라이드
 document.addEventListener('DOMContentLoaded', () => {
     const mainImage = document.querySelector('.FD_detail_mainImage img');
