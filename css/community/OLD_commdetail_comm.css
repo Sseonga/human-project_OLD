@@ -372,6 +372,9 @@ section .comm_right_mainDetail .comm_right_form .comm_right_hashtag{
 .comm_detailBar .detailBar_introduce:hover, .detailBar_community:hover, .detailBar_refund:hover, .detailBar_update:hover{
     background-color: rgb(104, 104, 104);
 }
+#detailBar_community{
+    scroll-margin-top: 300px;
+}
 
 /* 커뮤니티 프로젝트 소개칸 */
 .comm_projectCommunity{
