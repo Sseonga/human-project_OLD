@@ -44,11 +44,11 @@ if (dayDiff < 7 || dayDiff > 60) {
 });
 
 // 프로젝트명 영어제한  
-    const urlInput = document.getElementById('url-slug');
+const urlInput = document.getElementById('url-slug');
 
-    urlInput.addEventListener('input', () => {
-    urlInput.value = urlInput.value.replace(/[^a-zA-Z0-9]/g, '');
-    });
+urlInput.addEventListener('input', () => {
+  urlInput.value = urlInput.value.replace(/[^a-zA-Z0-9]/g, '');
+});
 
 // 대표이미지 미리보기
 const fileInput = document.getElementById('image-upload');
@@ -74,4 +74,12 @@ fileInput.addEventListener('change', () => {
     uploadText.style.display = 'block';
     alert("이미지 파일만 업로드 가능합니다!");
   }
+});
+// 목표금액 숫자제한 콤마표시
+const goalInput = document.getElementById('goal-amount');
+
+goalInput.addEventListener('input', () => {
+  let onlyNums = goalInput.value = goalInput.value.replace(/[^0-9]/g, '').slice(0,30);
+  let formatted = parseInt(onlyNums).toLocaleString('ko-KR');
+  goalInput.value = formatted;
 });

@@ -137,7 +137,7 @@ label {
 /* 프로젝트 진행기간 */
 .date-container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
@@ -164,6 +164,7 @@ label {
     border: 1px solid #ccc;
     border-radius: 8px;
     align-items: end;
+    margin-right: 30px;
 }
 
 /* 주소 */

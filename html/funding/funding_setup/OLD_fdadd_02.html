@@ -71,14 +71,14 @@
                         </div>
                     </div>
                 </div>
-                <a href="../../community/creat_community/OLD_newcomm_01.html"><button>프로젝트 만들기</button></a>
+                <a href="../../community/creat_community/OLD_newcomm_01.html"><button>커뮤니티 만들기</button></a>
             </div>
         </header>
         <div class="blank"></div>
         <!-- 헤더 영역 -->
         <div class="container">
             <div class="writing-order">
-                프로젝트 만들기 
+                <p class="caption">펀딩 오픈하기</p><br>
                 <ul>
                     <li><a href="./OLD_fdadd_01.html">1.기본정보</a></li>
                     <li><a href="./OLD_fdadd_02.html">2.스토리</a></li>
@@ -92,17 +92,26 @@
                 <label class="caption">프로젝트 소개 영상과 이미지를 등록해주세요</label>
                 <p class="info-text">영상과 이미지를 함께 등록할경우, 영상이 먼저 보여집니다.</p>
                 <p class="subcaption">동영상 주소를 적어주세요</p>
-                <input type="url" placeholder="Youtube, Video URL을 입력해주세요."><button class="urlbutton">+</button>
+                <div id="video-url-list">
+                    <div class="url-row" id="url-row">
+                      <input type="url" placeholder="Youtube, Video URL을 입력해주세요.">
+                      <!-- <button class="urlbutton" type="button">+</button> -->
+                    </div>
+                    <button class="urlbutton" type="button">+</button>
+                </div>
                 <!-- 버튼클릭시 urlinput 필드 추가 스크립트 -->
                 
-                <p class="subcaption">이미지를 등록해주세요</p>
-                <input type="file"><br><br>
-                <!-- 이미지 등록 기능 -->
+                <p class="subcaption">이미지를 등록해주세요</p><br>
+                <label class="img-upload-label">
+                    <input type="file" id="image-upload" accept="image/*">
+                    <img id="image-preview" src="" alt="미리보기" class="preview-placeholder">
+                    <span class="upload-text">이미지 선택</span>
+                </label>
 
                 <label class="caption">프로젝트 스토리를 적어주세요</label>
                 <p class="info-text">프로젝트를 시작하기 위해 필요한 내용이 없다면 승인이 되지 않습니다. 가이드북을 읽어보시고 적어주세요</p>
-                <button>디자인 가이드 보기</button><br><br>
-                <input type="">
+                <!-- <button>디자인 가이드 보기</button><br><br> -->
+            <textarea class="story-input" placeholder="여기에 프로젝트 스토리를 작성해주세요" rows="10"></textarea>
 
                 <div class="bot-button">
                     <button>저장하기</button>

@@ -136,7 +136,6 @@ label {
 /* 프로젝트 진행기간 */
 .date-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
@@ -163,6 +162,7 @@ label {
     border: 1px solid #ccc;
     border-radius: 8px;
     align-items: end;
+    margin-right: 30px;
 }
 
 /* 주소 */
@@ -238,4 +238,21 @@ label {
 background-color: #f4a261;
 color: #fff;
 border-color: #e76f51;
+}
+/* 목표금액 */
+.goal-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.goal-container input[type="text"] {
+    width: 280px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: right;
+    background-color: #fff;
 }

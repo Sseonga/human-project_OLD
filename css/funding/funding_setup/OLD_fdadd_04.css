@@ -111,3 +111,33 @@ label {
 .bot-button button:hover {
     background-color: #e76f51;
 }
+
+.story-input {
+    width: 85%;
+    height: 170px;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+fieldset {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fdf1e7ec;
+    border: none;
+}
+fieldset p {
+    font-size: 16px;
+    font-weight: bold;
+}
+fieldset input[type="text"] {
+    width: 300px;
+}
+#phone-number {
+  padding: 10px;
+  font-size: 16px;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

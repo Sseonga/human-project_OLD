@@ -71,14 +71,14 @@
                         </div>
                     </div>
                 </div>
-                <a href="../../community/creat_community/OLD_newcomm_01.html"><button>프로젝트 만들기</button></a>
+                <a href="../../community/creat_community/OLD_newcomm_01.html"><button>커뮤니티 만들기</button></a>
             </div>
         </header>
         <div class="blank"></div>
         <!-- 헤더 영역 -->
         <div class="container">
             <div class="writing-order">
-                프로젝트 만들기 
+                <p class="caption">펀딩 오픈하기</p><br>
                 <ul>
                     <li><a href="./OLD_fdadd_01.html">1.기본정보</a></li>
                     <li><a href="./OLD_fdadd_02.html">2.스토리</a></li>
@@ -88,38 +88,48 @@
                 </ul>
             </div>
 
-          <div class="main-content">
-              <label class="caption">진행자 정보를 입력해주세요</label>
-              <p class="info-text">사업자등록증 이미지를 올려주세요 (개인일 경우 신분증 이미지)</p>
-              <input type="file" name="" id="">
-              <p class="info-text">사업자 주소를 선택해 주세요 (개인일 경우 신분증 상세주소)</p>
-              <div class="provider-address">
-                  <label for="sido">시/도:</label>
-                  <select id="sido" onchange="updateSigungu()">
-                      <option value="">시/도를 선택해주세요.</option>
-                  </select>
-                  <label for="sigungu">시/군/구:</label>
-                  <select id="sigungu">
-                      <option value="">시/군/구를 선택해주세요.</option>
-                  </select>
-              </div>
-              
-              <label class="caption">계좌 정보를 입력해주세요</label>
-              <p class="info-text">프로젝트 종료 후 정산 받을 계좌를 입력해주세요</p>
-              <select id="account">
-                  <option value="">은행</option>
-              </select>
-              <input type="text" placeholder="계좌 번호를 숫자만 입력해주세요.(-제외)"><br>
-              <p class="info-text">예금주명을 적어주세요</p>
-              <input type="text" placeholder="계좌에 등록한 예금주명과 일치해야 합니다."><br>
-              <p class="info-text">통장 사본 이미지를 올려주세요</p>
-              <input type="file" name="" id=""><br><br>
+            <div class="main-content">
+                <label class="caption">진행자 정보를 입력해주세요</label>
+                <p class="info-text">사업자등록증 이미지를 올려주세요 (개인일 경우 신분증 이미지)</p>
+                <label class="img-upload-label">
+                    <input type="file" id="image-upload" accept="image/*">
+                    <img id="image-preview" src="" alt="미리보기" class="preview-placeholder">
+                    <span class="upload-text" id="upload-text">이미지 선택</span>
+                </label>
+                <p class="info-text">사업자 주소를 선택해 주세요 (개인일 경우 신분증 상세주소)</p>
+                <div class="provider-address">
+                    <label for="sido">시/도:</label>
+                    <select id="sido" onchange="updateSigungu()">
+                        <option value="">시/도를 선택해주세요.</option>
+                    </select>
+                    <label for="sigungu">시/군/구:</label>
+                    <select id="sigungu">
+                        <option value="">시/군/구를 선택해주세요.</option>
+                    </select>
+                </div>
+                
+                <label class="caption">계좌 정보를 입력해주세요</label>
+                <p class="info-text">프로젝트 종료 후 정산 받을 계좌를 입력해주세요</p>
+                <div class="account-container">
+                    <select id="account">
+                        <option value="">은행</option>
+                    </select>
+                    <input type="text" maxlength="20" id="account-number" placeholder="계좌 번호를 숫자만 입력해주세요.(-제외)">
+                </div>
+                <p class="info-text">예금주명을 적어주세요</p>
+                <input type="text" placeholder="계좌에 등록한 예금주명과 일치해야 합니다."><br>
+                <p class="info-text">통장 사본 이미지를 올려주세요</p>
+                <label class="img-upload-label">
+                    <input type="file" id="image-upload-ac" accept="image/*">
+                    <img id="image-preview-ac" src="" alt="미리보기" class="preview-placeholder">
+                    <span class="upload-text" id="upload-text-ac">이미지 선택</span>
+                </label>
 
-              <div class="bot-button">
-                  <button>저장하기</button>
-                  <button>다음단계</button>
-              </div>
-          </div>
+                <div class="bot-button">
+                    <button>저장하기</button>
+                    <button>다음단계</button>
+                </div>
+            </div>
             
         </div>
         <!-- 푸터 영역 -->

@@ -111,3 +111,126 @@ label {
 .bot-button button:hover {
     background-color: #e76f51;
 }
+/* 리워드 필드 */
+fieldset {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fdf1e7ec;
+    border: none;
+}
+fieldset p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.reward-money-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.reward-money-container input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: right;
+    background-color: #fff;
+}
+.reward-limit-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.reward-title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.char-count {
+  font-size: 14px;
+  color: #666;
+  min-width: 50px;
+  text-align: right;
+}
+.reward-title-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.reward-infotext {
+  width: 400px;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.reward-delivery input[type="date"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    align-items: end;
+    margin-right: 30px;
+}
+.reward-adress-need-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.reward-button {
+    margin-top: 30px;
+}
+.reward-button button {
+    background-color: #f4a261;
+    border: none;
+    color: white;
+    padding: 9px 18px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.reward-button button:hover {
+    background-color: #e76f51;
+}
+
+/* 미리보기 스타일 */
+.no-preview-msg {
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+}
+.rewardContent {
+    position: relative;
+    padding: 20px;
+    background-color: rgb(199, 199, 199);
+    text-align: left;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    font-size: 15px;
+    border: 1px solid black;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.rewardContent .remove-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
