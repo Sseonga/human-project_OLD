@@ -104,3 +104,13 @@ accountInput.addEventListener('input', () => {
   let onlyNums = accountInput.value = accountInput.value.replace(/[^0-9]/g, '')
   accountInput.value = onlyNums;
 });
+
+
+function movePage() {
+  const go = confirm("작성내용을 제출하시겠습니까?");
+  if (go) {
+    window.location.href = "../../main/OLD_main_page1.html";
+    alert("작성하신 펀딩은 3일 이내로 심사 이후 결과를 안내해드립니다.")
+  } else {
+  }
+}
